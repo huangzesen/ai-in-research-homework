@@ -3,7 +3,7 @@
 
 ## Status
 
-Where the task stands and what's next (update this at the end of every session).
+Week 1 benchmark submitted as PR #4. Next: check the GitHub CI after the instructor approves its run; fix any failures and re-submit if needed. (2026-10-05)
 
 ## Runs
 
