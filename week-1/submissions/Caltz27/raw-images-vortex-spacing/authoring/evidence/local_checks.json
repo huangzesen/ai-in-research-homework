@@ -1,0 +1,123 @@
+{
+  "check_type": "Local verifier pytest controls; no containers or frontier agents run",
+  "date": "2026-10-05",
+  "python": "3.13.12",
+  "cases": [
+    {
+      "case": "expert_reference",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "pytest_summary": [
+        "24 passed in 0.91s"
+      ]
+    },
+    {
+      "case": "arbitrary_order",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "pytest_summary": [
+        "24 passed in 0.86s"
+      ]
+    },
+    {
+      "case": "centers_shifted_within_tolerance",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true,
+      "pytest_summary": [
+        "24 passed in 0.84s"
+      ]
+    },
+    {
+      "case": "center_just_outside_tolerance",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "1 failed, 23 passed in 0.86s"
+      ]
+    },
+    {
+      "case": "missing_center",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "4 failed, 20 passed in 0.86s"
+      ]
+    },
+    {
+      "case": "extra_center",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "4 failed, 20 passed in 0.81s"
+      ]
+    },
+    {
+      "case": "fabricated_spacing",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "1 failed, 23 passed in 0.81s"
+      ]
+    },
+    {
+      "case": "nonfinite_coordinate",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "9 passed, 15 errors in 0.84s"
+      ]
+    },
+    {
+      "case": "duplicated_frame",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "2 passed, 22 errors in 0.83s"
+      ]
+    },
+    {
+      "case": "empty_frames",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "2 passed, 22 errors in 0.86s"
+      ]
+    },
+    {
+      "case": "malformed_json",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "1 passed, 23 errors in 0.86s"
+      ]
+    },
+    {
+      "case": "no_output",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true,
+      "pytest_summary": [
+        "1 failed, 23 errors in 0.84s"
+      ]
+    }
+  ],
+  "packages": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "pytest": "8.4.1"
+  },
+  "reference_reproduction": "pass: coordinates identical; spacing agrees within 1e-12 mm",
+  "input_hash_check": "all six source exports match their staged SHA256 hashes",
+  "instruction_sha256": "9e14e1f93e59909465474f0a18d6d4cf6252685fc3e9ef5f59e57d38808b3b20"
+}
