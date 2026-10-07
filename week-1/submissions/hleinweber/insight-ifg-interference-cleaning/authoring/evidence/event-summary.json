@@ -1,0 +1,120 @@
+{
+  "filter": "Fourth-order Butterworth, scipy sosfiltfilt default padding, cutoff 1/3600 Hz; each continuous segment filtered independently at median 5s cadence. Exclude 1 hour at segment edges from event selection.",
+  "selection": "Six strongest separated peaks in maximum absolute component high-pass input/reference difference; proposed +/-10 minute windows. Candidates require scientist review, not an exhaustive interference catalogue.",
+  "events": [
+    {
+      "event": 1,
+      "center_row_zero_based": 28520,
+      "timestamp": 1670916472.623,
+      "window_rows": [
+        28400,
+        28641
+      ],
+      "input_reference_rms_nT": [
+        2.587820214406141,
+        2.898221239351454,
+        3.7152631180450695
+      ],
+      "zero_high_frequency_rms_nT": [
+        0.31603045409487124,
+        0.17888496830302672,
+        0.2275256746576194
+      ]
+    },
+    {
+      "event": 2,
+      "center_row_zero_based": 55619,
+      "timestamp": 1671051985.152,
+      "window_rows": [
+        55499,
+        55740
+      ],
+      "input_reference_rms_nT": [
+        0.15634911855725545,
+        0.8078119986560917,
+        0.3174034232513837
+      ],
+      "zero_high_frequency_rms_nT": [
+        1.6198234526116098,
+        0.5779928769330502,
+        0.4741226566769124
+      ]
+    },
+    {
+      "event": 3,
+      "center_row_zero_based": 63037,
+      "timestamp": 1671089074.304,
+      "window_rows": [
+        62917,
+        63158
+      ],
+      "input_reference_rms_nT": [
+        2.756141761540026,
+        1.787702253453449,
+        7.684038515124705
+      ],
+      "zero_high_frequency_rms_nT": [
+        0.21059475633212726,
+        0.09534311566505181,
+        0.21928906506638865
+      ]
+    },
+    {
+      "event": 4,
+      "center_row_zero_based": 107966,
+      "timestamp": 1671314051.405,
+      "window_rows": [
+        107846,
+        108087
+      ],
+      "input_reference_rms_nT": [
+        1.745309058795148,
+        4.532772829326886,
+        1.5145571848093335
+      ],
+      "zero_high_frequency_rms_nT": [
+        1.7586450776126492,
+        2.044510322294035,
+        0.8225129948349674
+      ]
+    },
+    {
+      "event": 5,
+      "center_row_zero_based": 126303,
+      "timestamp": 1671405744.569,
+      "window_rows": [
+        126183,
+        126424
+      ],
+      "input_reference_rms_nT": [
+        0.25667027722398983,
+        1.5343260665953022,
+        0.6011033999277312
+      ],
+      "zero_high_frequency_rms_nT": [
+        0.9017670879003792,
+        0.26558623307279344,
+        0.4693701412597265
+      ]
+    },
+    {
+      "event": 6,
+      "center_row_zero_based": 131713,
+      "timestamp": 1671432793.92,
+      "window_rows": [
+        131593,
+        131834
+      ],
+      "input_reference_rms_nT": [
+        1.805516253624271,
+        1.3761217392904626,
+        1.7309571718943415
+      ],
+      "zero_high_frequency_rms_nT": [
+        0.5246400928067856,
+        0.2909244417375029,
+        0.13266634682630596
+      ]
+    }
+  ]
+}

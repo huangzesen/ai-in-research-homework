@@ -1,0 +1,15 @@
+{
+  "about": "Written by tools/hw: fingerprints of what the student approved. Don't edit by hand.",
+  "instruction": {
+    "approved": "2026-10-06T09:42-07:00",
+    "fingerprint": "64b64ad810040420"
+  },
+  "publish": {
+    "approved": "2026-10-06T09:51-07:00",
+    "fingerprint": "33e30df5adc65ac0"
+  },
+  "window": {
+    "approved": "2026-10-06T09:34-07:00",
+    "fingerprint": "8546eb0384f98c5c"
+  }
+}
