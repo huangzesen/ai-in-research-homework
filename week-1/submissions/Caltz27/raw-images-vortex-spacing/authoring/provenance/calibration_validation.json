@@ -1,0 +1,45 @@
+{
+  "validation": "Retained original-image PNGs map to the corresponding dewarped images under the supplied planar homography",
+  "coordinate_units": "mm",
+  "pixel_convention": "zero-based columns rightward, rows downward; no vertical flip",
+  "dewarped_archive_sha256": "c2f30b43284bf54ed4c902313893d755c26dc4da55b111d4645c8b12312cda27",
+  "checks": [
+    {
+      "frame": 0,
+      "sampled_points": 50000,
+      "correlation": 0.9999997526693454,
+      "mean_absolute_intensity_difference": 0.36544912106636984
+    },
+    {
+      "frame": 1,
+      "sampled_points": 50000,
+      "correlation": 0.999999753380127,
+      "mean_absolute_intensity_difference": 0.36607201885295026
+    },
+    {
+      "frame": 49,
+      "sampled_points": 50000,
+      "correlation": 0.9999997554333468,
+      "mean_absolute_intensity_difference": 0.36321516358154915
+    },
+    {
+      "frame": 50,
+      "sampled_points": 50000,
+      "correlation": 0.9999997549343601,
+      "mean_absolute_intensity_difference": 0.3636036938927881
+    },
+    {
+      "frame": 98,
+      "sampled_points": 50000,
+      "correlation": 0.9999997497209235,
+      "mean_absolute_intensity_difference": 0.36494003465940567
+    },
+    {
+      "frame": 99,
+      "sampled_points": 50000,
+      "correlation": 0.9999997499353824,
+      "mean_absolute_intensity_difference": 0.36406182783634095
+    }
+  ],
+  "limits": "Checks validate the supplied mapping and selected image correspondence, not absolute calibration accuracy or PIV accuracy"
+}
