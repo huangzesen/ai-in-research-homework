@@ -13,6 +13,7 @@ To start any week, open the week's folder below, or its page on [class.xhelio.ai
 | Week | Assignment | Due |
 |---|---|---|
 | [1](week-1/) | The hardest task in your field, as an AI benchmark task | Wed Oct 7, before class |
+| [2](week-2/) | Build your own agent: a harness with one tool, `bash` | Wed Oct 14, before class |
 
 ## Rules
 
@@ -23,7 +24,8 @@ To start any week, open the week's folder below, or its page on [class.xhelio.ai
 ## Under the hood
 
 - [`tools/`](tools/): `uv run tools/hw.py`, the checklist your agent follows, and the checks CI runs on every pull request
-- [`.agents/skills/build-a-task/SKILL.md`](.agents/skills/build-a-task/SKILL.md): the guide your AI agent reads
+- [`.agents/skills/build-a-task/SKILL.md`](.agents/skills/build-a-task/SKILL.md): the guide your AI agent reads for week 1
+- [`.agents/skills/build-a-harness/SKILL.md`](.agents/skills/build-a-harness/SKILL.md): the guide your AI agent reads for week 2
 
 ## License
 
