@@ -6,7 +6,7 @@ description: Install, configure, run, and check Jasmine's Agent, jasmine0010's A
 
 Repository: https://github.com/jasmine0010/jasmines-agent
 
-Local draft: publication of the repository above is pending. Installation does not authorize creating a repository, pushing code, or submitting a pull request. If cloning fails, report the error and stop.
+This repository contains the Week 2 version with one approved shell tool. Installation does not authorize creating a repository, pushing code, or submitting a pull request. If cloning fails, report the error and stop.
 
 ## Install
 
@@ -93,4 +93,4 @@ These cover listing, sequential commands, intentional command failure, denial, a
 
 HTTP 401/403 suggests credentials or access; 402 or 429 can indicate credits or quotas. Check configuration and provider access locally without exposing keys. A model request timeout can be retried with a new message. Refresh after a server restart; saved conversations remain available.
 
-Runtime checks were performed on Windows. macOS/Linux commands are provided but have not been runtime-tested. A fresh local-clone installation passed locked setup, offline tests, live listing/denial/failure checks, token usage, and saved-chat checks. A clone from the public URL remains pending publication approval.
+Runtime checks were performed on Windows. macOS/Linux commands are provided but have not been runtime-tested. A fresh local-clone installation passed locked setup, offline tests, live listing/denial/failure checks, token usage, and saved-chat checks. A fresh clone from the public URL also passed locked setup, all 12 offline checks, and localhost web startup. Live model checks passed on the same Week 2 implementation before publication; they were not repeated in the public clone because the free model quota was exhausted.
