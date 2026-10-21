@@ -69,7 +69,7 @@ Terminal alternative: `uv run --env-file .env python agent.py --chat`; type `/qu
 
 1. Ask **What files are in this folder? Use bash.** Expect a proposed command with Approve and Deny buttons. Have the user review and approve the listing command. Expect its output, exit code, and a model answer based on that output. Commands begin in `workspace/`; an empty listing is valid on a fresh install.
 2. Ask it to run `Write-Output hello` on Windows, or `printf hello` on macOS/Linux, and choose Deny. Expect a declined tool result and a model reply respecting the denial; no command should execute.
-3. Ask it to run `doesnotexist` once and explain the error. Approve that deliberate failure. Expect a nonzero exit code and an explanation, without a crash.
+3. Start a new chat so the failure check is independent of the earlier denial. Ask it to run `doesnotexist` once and explain the error. Approve that deliberate failure. Expect a nonzero exit code and an explanation, without a crash.
 4. Confirm each API call shows input, output, and cached-input tokens when reported. Cached tokens are part of the input count.
 5. Rename a chat, create another, then reopen the earlier chat and refresh. Its title and messages should remain.
 
@@ -93,4 +93,4 @@ These cover listing, sequential commands, intentional command failure, denial, a
 
 HTTP 401/403 suggests credentials or access; 402 or 429 can indicate credits or quotas. Check configuration and provider access locally without exposing keys. A model request timeout can be retried with a new message. Refresh after a server restart; saved conversations remain available.
 
-Runtime checks were performed on Windows. macOS/Linux commands are provided but have not been runtime-tested. A public-clone installation check remains pending publication approval; a fresh local clone is used for the current prepublication check.
+Runtime checks were performed on Windows. macOS/Linux commands are provided but have not been runtime-tested. A fresh local-clone installation passed locked setup, offline tests, live listing/denial/failure checks, token usage, and saved-chat checks. A clone from the public URL remains pending publication approval.
