@@ -44,9 +44,9 @@ and offers tool schemas beside its built-in shell tool. The system prompt lists
 skill metadata; skill bodies are read only when needed through an approved shell
 call. The harness owns polling and delivers final answers in phone mode.
 
-Use Telegram's Reply action on each approval request and type `yes` or `no`.
+In the default manual mode, use Telegram's Reply action on each approval request and type `yes` or `no`.
 Only `yes` approves; another reply or a three-minute timeout declines. Old replies
-cannot approve a new action. Every shell command asks. The owner explicitly
+cannot approve a new action. Every shell command asks in manual mode. The owner explicitly
 trusted the three read-only PSP tools, so those do not ask repeatedly; other
 model-requested MCP actions still ask. `/new` resets phone conversation history.
 Ctrl+C stops the process. Bot messages are not end-to-end encrypted, and command
@@ -56,7 +56,7 @@ approval is not an operating-system sandbox.
 
 Both plugins worked in Codex and through independent SDK stdio clients.
 The owner confirmed Telegram delivery from Codex and the normal harness web chat,
-then phone command approval, denial, and free-space reporting. There are 30
+then phone command approval, denial, and free-space reporting. There are 32
 passing harness checks, eight Telegram plugin checks, and eight research checks.
 Claude Code is unavailable on the test machine, so its plugin validator was not run.
 
@@ -72,3 +72,9 @@ with the final phone result before submission.
 Codex helped implement the MCP servers, plugin loader, phone interface, tests,
 and documentation. I selected the research task, completed the phone checkpoints,
 and chose agreement with my Week 1 acceptance ranges as the scientific check.
+
+After the manual approval and denial demonstrations, the owner requested
+automatic execution for local Telegram use. Set `"telegram_auto_approve": true`
+in the harness settings.json and restart to enable it; all phone-requested shell
+and MCP actions then run without prompts. The release default is false so the
+assignment's approval-by-reply behavior can be demonstrated.
