@@ -18,8 +18,8 @@ acceptance ranges. It needs no research API key or network data retrieval.
 
 Harness repository: [jasmine0010/jasmines-agent](https://github.com/jasmine0010/jasmines-agent).
 The Week 2 version is public on `main`. This local submission draft uses the
-prepared `week-3` release branch, which is awaiting final phone verification and
-publication approval. No Week 3 submission PR has been opened.
+prepared `week-3` release branch. All technical checks are complete; publication
+and the class PR await owner approval. No Week 3 submission PR has been opened.
 
 After the release branch is published, install the Week 3 version with:
 
@@ -62,13 +62,12 @@ Claude Code is unavailable on the test machine, so its plugin validator was not 
 
 The PSP comparison was resumed through the Telegram interface after a model
 timeout; its MCP call succeeded and Telegram accepted the expected answer.
-Owner receipt confirmation is pending. The underlying research calculation and
+The owner confirmed receiving the exact expected reply on October 26, 2026. The underlying research calculation and
 second-host answer passed.
 Live owner filtering and restart tests
 also passed: a message with a mismatched receiver ID was rejected, an actual
 pre-start message was skipped, and a fresh message arrived exactly once. Receipts
-are saved in the harness's validation folder. This draft must be updated
-with the final phone result before submission.
+are saved in the harness's validation folder. The phone research checkpoint is complete.
 
 Codex helped implement the MCP servers, plugin loader, phone interface, tests,
 and documentation. I selected the research task, completed the phone checkpoints,
