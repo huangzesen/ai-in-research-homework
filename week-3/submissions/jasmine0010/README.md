@@ -56,13 +56,14 @@ approval is not an operating-system sandbox.
 
 Both plugins worked in Codex and through independent SDK stdio clients.
 The owner confirmed Telegram delivery from Codex and the normal harness web chat,
-then phone command approval, denial, and free-space reporting. There are 32
+then phone command approval, denial, and free-space reporting. There are 36
 passing harness checks, eight Telegram plugin checks, and eight research checks.
 Claude Code is unavailable on the test machine, so its plugin validator was not run.
 
-The live PSP research answer from the phone is pending. The provider quota has
-reset, Telegram connectivity is restored, and the bot is ready for the final
-check. The underlying research calculation and second-host answer passed.
+The PSP comparison was resumed through the Telegram interface after a model
+timeout; its MCP call succeeded and Telegram accepted the expected answer.
+Owner receipt confirmation is pending. The underlying research calculation and
+second-host answer passed.
 Live owner filtering and restart tests
 also passed: a message with a mismatched receiver ID was rejected, an actual
 pre-start message was skipped, and a fresh message arrived exactly once. Receipts
