@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "insight_literature": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--script",
+        "${CLAUDE_PLUGIN_ROOT}/server.py"
+      ]
+    }
+  }
+}
