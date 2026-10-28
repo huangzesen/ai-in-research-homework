@@ -17,11 +17,10 @@ acceptance ranges. It needs no research API key or network data retrieval.
 ## Harness and running
 
 Harness repository: [jasmine0010/jasmines-agent](https://github.com/jasmine0010/jasmines-agent).
-The Week 2 version is public on `main`. This local submission draft uses the
-prepared `week-3` release branch. All technical checks are complete; publication
-and the class PR await owner approval. No Week 3 submission PR has been opened.
+The Week 2 version uses `main`. The Week 3 version, including the plugin loader
+and Telegram mode, uses the `week-3` release branch. All technical checks are complete.
 
-After the release branch is published, install the Week 3 version with:
+Install the Week 3 version with:
 
 ```sh
 git clone --branch week-3 https://github.com/jasmine0010/jasmines-agent.git
