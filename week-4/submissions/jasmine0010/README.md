@@ -86,8 +86,8 @@ and cancellation races. The email plugin passed 18 synthetic mail tests,
 seven configuration tests and an independent stdio protocol check. These
 offline checks are separate from the five live model demonstrations.
 
-Implementation and all five live demonstrations are complete. Publication
-review is pending; no Week 4 push or PR has been performed yet.
+Implementation and all five live demonstrations are complete. The owner
+reviewed the public files and approved harness publication and the class PR.
 
 Codex helped implement, explain, test and document the harness and plugin, and
 reviewed the scientific claims against tool outputs. The configured NVIDIA
