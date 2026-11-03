@@ -1,0 +1,6 @@
+# Based on reported input tokens, checked after a completed wake only.
+# Demo flag overrides threshold to 2000 and keeps one recent user turn.
+enabled = true
+threshold_tokens = 20000
+keep_user_turns = 2
+summary_max_tokens = 1024
