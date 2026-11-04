@@ -1,0 +1,4 @@
+# Owner-selected demonstration threshold, using API-reported input tokens.
+trigger_tokens = 20000
+keep_recent_turns = 2
+max_tail_bytes = 24000

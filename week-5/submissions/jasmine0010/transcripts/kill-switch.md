@@ -15,4 +15,4 @@ and 13636 reported input/output tokens before the budget phase.
 The first attempt expired without passing; its receipt is preserved separately.
 The repaired helper detects both main and child processes. The current private
 receipt is validation/week-5-controls-live.json; no chat ID, mailbox address or
-private message body is included here. The tiny-budget demo also passed; see week-5-step-3-limit.md.
+private message body is included here. The tiny-budget demo also passed; see limit.md.

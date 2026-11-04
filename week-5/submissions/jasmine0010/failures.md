@@ -254,11 +254,27 @@ available while Telegram is offline. Two new synthetic tests cover startup and
 recovery, including no secret values in logs. The live service now stays alive;
 phone reconnection cannot be claimed until the network works again.
 
+## 2026-11-03: network outage during the replacement run
+
+The run passed its audit, but the computer could not reliably reach Telegram
+for most of it. The journal recorded 1389 Telegram watcher failures (10:57 to
+16:29, then two at 17:10), 123 email watcher failures (intermittent, 11:56 to
+16:28) and 2 Telegram delivery failures. Those were the 10:59 email notice and
+the 11:00 scheduled answer, so neither reached the phone. The exact network
+cause is unknown.
+
+How noticed: the journal's failure counts and a DNS check. The audit does not
+check delivery, so "passed" does not mean every answer arrived.
+
+Changed: no settings were changed; the watchers retried. A real owner message
+at 16:53 woke the agent after the network returned, and the student confirmed
+the reply reached the phone. Undelivered answers are not resent, which remains
+a known limitation.
+
 ## Status
 
 Steps 1-6 and their student checkpoints are complete. The original overnight
-attempt is honestly incomplete and preserved. The corrected eight-hour daytime
-replacement is in progress. Its real email and scheduled paper wakes are
-verified; full eight-hour duration remains pending until 18:58. Telegram phone
-delivery is unavailable until DNS connectivity returns. The submission is a local draft. Evidence/failure review, privacy
-approval and publication/PR checkpoints remain.
+attempt is honestly incomplete and preserved in transcripts/night-attempt-1.md.
+The eight-hour daytime replacement passed its audit (8.00 hours, same live
+service run, no Windows sleep events, three completed wake-ups, zero idle model
+requests); see transcripts/night.md.

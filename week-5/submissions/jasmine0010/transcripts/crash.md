@@ -116,3 +116,6 @@ at 2026-11-03 08:00 -08:00. This is the completed Step 6 checkpoint.
 The service stays running. The eight-hour evidence window starts at the verified
 ready event above; it is not yet an eight-hour success. The log-derived report
 is scheduled separately for 08:15 Pacific on November 3.
+
+Later note: that overnight window ended incomplete (see night-attempt-1.md). The
+eight-hour replacement run is in night.md.

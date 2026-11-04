@@ -2,12 +2,14 @@
 
 Harness: https://github.com/jasmine0010/jasmines-agent
 
-Status: local draft, pending a completed eight-hour replacement and student
-review. Week 5 harness changes have not yet been published. The original
-overnight attempt is preserved as incomplete in transcripts/night-attempt-1.md.
-The student requested a daytime replacement beginning November 3, 10:57:49
-Pacific, with a report due 18:58. See transcripts/night.md for actual evidence;
-elapsed wall-clock time is not presented as verified continuous operation.
+Status: the eight-hour replacement run passed its audit: 8.00 hours (November 3,
+10:57:49 to 18:58:02 Pacific), one continuously living service process, no
+Windows sleep or Modern Standby events, three completed wake-ups, four model
+requests, 26953 reported tokens and zero idle model requests. See
+transcripts/night.md. The student requested this daytime replacement after the
+original overnight attempt, which is preserved as incomplete in
+transcripts/night-attempt-1.md. The audit does not check phone delivery; the
+network outage during the run is recorded in failures.md.
 
 The Windows Task Scheduler service starts at login, uses limited interactive
 user privileges, and restarts a missing instance through a native minute
@@ -21,9 +23,8 @@ and identity. No credential, SID or private mailbox is included here.
 Watchers run in code: Telegram long polling uses a one-second wait, email is
 checked every 60 seconds, and the scheduler checks once a minute. All events
 feed one queue; no model call occurs while it is empty. Startup Telegram DNS
-failure no longer aborts other event sources. Phone connectivity is currently
-unavailable on the computer's network; the user will restore it. Transport
-retries do not wake the model. Shell commands require owner approval except
+failure no longer aborts other event sources. Transport retries do not wake the
+model. Shell commands require owner approval except
 the exact Get-Location, Get-ChildItem and Get-Date allowlist.
 
 The recurring research task is a weekday 08:00 Pacific digest of new arXiv
@@ -59,13 +60,13 @@ request. Raw .env, state, logs, memory, addresses and chat IDs remain private.
 AI assistance: OpenAI Codex helped implement, debug and test the harness,
 review logs and prepare these artifacts. The student chose the research job
 and approval policy, performed real phone/email checks, explained event
-waking and recovery, and reviewed the compaction summary. No agent framework
-was used. Publication and final PR require the student's evidence/privacy
-review; this draft does not claim the replacement run has already completed.
+waking and recovery, and reviewed the compaction summary. Claude Code checked
+the replacement run's audit against the journal, drafted the outage failure
+entry and updated the final status text with the student. No agent framework
+was used.
 
-Replacement preflight is verified: the genuine email wake and temporary
-scheduled paper check completed with three model requests and 19698 reported
-tokens. The temporary job is removed; schedule.toml contains the normal
-recurring digest. Telegram delivery remains unavailable on this network.
-The remaining runtime requirement cannot be inferred from these short checks;
-the full report is scheduled for 18:58 Pacific. No push or PR has been made.
+Replacement run wake-ups: the genuine email wake (10:59) and temporary scheduled
+paper check (11:00) completed, but Telegram delivery failed, so neither answer
+reached the phone. An owner Telegram message at 16:53 woke the agent after
+connectivity returned, and the student confirmed the reply arrived. The
+temporary job is removed; schedule.toml contains the normal recurring digest.

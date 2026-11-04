@@ -1,6 +1,6 @@
 # Week 5: the overnight run
 
-Status: incomplete. Generated from the private append-only journal; student review pending.
+Status: incomplete. Generated from the private append-only journal.
 
 Window: 2026-11-02T23:15:36.685050-08:00 to 2026-11-03T08:15:00.332866-08:00.
 Elapsed: 8.99 hours. Same continuously living service process verified: False.
