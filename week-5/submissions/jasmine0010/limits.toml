@@ -1,0 +1,13 @@
+# Shared across the main agent and all workers; day ends at local midnight.
+turns_per_wake = 20
+minutes_per_wake = 15
+tokens_per_day = 250000
+replies_per_sender = 2
+shell_allowlist = ["Get-Location", "Get-ChildItem", "Get-Date"]
+
+# Token admission is enforced; dollar cost remains unknown without verified
+# model prices. Optionally configure all three USD prices per million tokens:
+# [prices_per_million]
+# input = 0.0
+# cached_input = 0.0
+# output = 0.0
