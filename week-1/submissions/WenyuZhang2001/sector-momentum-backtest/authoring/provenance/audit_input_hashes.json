@@ -1,0 +1,9 @@
+{
+  "environment/data/README.md": "2900e01f9809d141bdd0c68f34b7725f4d95fcdf8203641cc54e975df89c626b",
+  "environment/data/cpi_monthly.csv": "eee22b9487b168b76cb708d59ba432f3c621d0ad43f2978b11651a6ce0090729",
+  "environment/data/industry_daily.csv": "28f04eeaf955b217c307e36b52e7d3bd6ab381ea12abde6e8ed0c836a5a26b7a",
+  "environment/data/market_daily.csv": "5a6585765f971240e625448c89d109419772af03c8a80db7a2e9b026d0023219",
+  "environment/data/strategies/strategy_a.py": "09da7ee3151ad3d8f9d68c43fbc705ca0a5973bb98e76cb31b27c4922e065849",
+  "environment/data/strategies/strategy_b.py": "8bb7b10af7ab07c26e6004cfa504a540f2a4d4c70e5d8f3fd6940d90b3f03724",
+  "environment/data/strategies/strategy_c.py": "e162601726b146b8cf6f240d0ba4e7573f6fd90cee9a9cc92d9ffa60e81d38a1"
+}

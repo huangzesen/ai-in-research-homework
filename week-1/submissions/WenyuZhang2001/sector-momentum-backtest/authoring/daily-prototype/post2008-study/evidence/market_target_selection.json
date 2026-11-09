@@ -1,0 +1,1223 @@
+{
+  "revision": "market target aligned",
+  "data_max": "2020-12-31",
+  "selection_target": "quarter wins against French market after matched costs",
+  "no_final_period_used_in_selection_code": true,
+  "previous_final_period_results_known_to_authors": true,
+  "winner": {
+    "order": 37,
+    "candidate": {
+      "family": "constant",
+      "index": 5
+    },
+    "development": {
+      "wins": 12,
+      "rounds": 24,
+      "win_fraction": 0.5,
+      "mean_excess_return": 0.001161096392026555,
+      "worst_excess_return": -0.054300563514544375,
+      "worst_quarter_drawdown": -0.1878214888533123,
+      "passed": null
+    },
+    "validation": {
+      "wins": 14,
+      "rounds": 16,
+      "win_fraction": 0.875,
+      "mean_excess_return": 0.028085012500712297,
+      "worst_excess_return": -0.031049984695105337,
+      "worst_quarter_drawdown": -0.30649979766579927,
+      "passed": null
+    }
+  },
+  "source_sha256": "09da7ee3151ad3d8f9d68c43fbc705ca0a5973bb98e76cb31b27c4922e065849",
+  "all_candidates": [
+    {
+      "order": 0,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.00790442696714718,
+        "worst_excess_return": -0.06821618194870838,
+        "worst_quarter_drawdown": -0.13456896021993459,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.017698203561979375,
+        "worst_excess_return": -0.06644990434974307,
+        "worst_quarter_drawdown": -0.35283923654535765,
+        "passed": null
+      }
+    },
+    {
+      "order": 1,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.012182331769898533,
+        "worst_excess_return": -0.0734682040045348,
+        "worst_quarter_drawdown": -0.16262352978243422,
+        "passed": null
+      },
+      "validation": {
+        "wins": 2,
+        "rounds": 16,
+        "win_fraction": 0.125,
+        "mean_excess_return": -0.01679896589071224,
+        "worst_excess_return": -0.06314161368830185,
+        "worst_quarter_drawdown": -0.35595751188238567,
+        "passed": null
+      }
+    },
+    {
+      "order": 2,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "win_fraction": 0.2916666666666667,
+        "mean_excess_return": -0.016948259085359935,
+        "worst_excess_return": -0.0812053459284966,
+        "worst_quarter_drawdown": -0.1458558833723751,
+        "passed": null
+      },
+      "validation": {
+        "wins": 2,
+        "rounds": 16,
+        "win_fraction": 0.125,
+        "mean_excess_return": -0.02605064951480856,
+        "worst_excess_return": -0.14069230903725782,
+        "worst_quarter_drawdown": -0.38731059931709033,
+        "passed": null
+      }
+    },
+    {
+      "order": 3,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "win_fraction": 0.2916666666666667,
+        "mean_excess_return": -0.01460973074692889,
+        "worst_excess_return": -0.07102934160773411,
+        "worst_quarter_drawdown": -0.15122899846916726,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.017533711545943874,
+        "worst_excess_return": -0.0800479798908853,
+        "worst_quarter_drawdown": -0.3620271830018399,
+        "passed": null
+      }
+    },
+    {
+      "order": 4,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "win_fraction": 0.2916666666666667,
+        "mean_excess_return": -0.010735754114059887,
+        "worst_excess_return": -0.07298702878414076,
+        "worst_quarter_drawdown": -0.15325138232242164,
+        "passed": null
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.0018729024128038077,
+        "worst_excess_return": -0.06067950666551125,
+        "worst_quarter_drawdown": -0.33785624429973427,
+        "passed": null
+      }
+    },
+    {
+      "order": 5,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.009280573998221511,
+        "worst_excess_return": -0.06308241949872695,
+        "worst_quarter_drawdown": -0.15017542232352188,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": 6.839255754959722e-05,
+        "worst_excess_return": -0.05845495151604596,
+        "worst_quarter_drawdown": -0.3506709921114164,
+        "passed": null
+      }
+    },
+    {
+      "order": 6,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "win_fraction": 0.2916666666666667,
+        "mean_excess_return": -0.008678213365744411,
+        "worst_excess_return": -0.10709326124632601,
+        "worst_quarter_drawdown": -0.15832802405715707,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": 0.0007619190645230187,
+        "worst_excess_return": -0.052025704309154874,
+        "worst_quarter_drawdown": -0.37687636759766097,
+        "passed": null
+      }
+    },
+    {
+      "order": 7,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.009395283263815668,
+        "worst_excess_return": -0.06577412038435049,
+        "worst_quarter_drawdown": -0.1484860172641772,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.0013066721744627516,
+        "worst_excess_return": -0.0506964472792335,
+        "worst_quarter_drawdown": -0.37324513552384275,
+        "passed": null
+      }
+    },
+    {
+      "order": 8,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "win_fraction": 0.5,
+        "mean_excess_return": -0.009513288943301246,
+        "worst_excess_return": -0.0723644005848183,
+        "worst_quarter_drawdown": -0.1808119865021125,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": 0.005230782979596588,
+        "worst_excess_return": -0.07658882858750826,
+        "worst_quarter_drawdown": -0.33987582685343043,
+        "passed": null
+      }
+    },
+    {
+      "order": 9,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 15,
+        "rounds": 24,
+        "win_fraction": 0.625,
+        "mean_excess_return": -0.0029978619037222634,
+        "worst_excess_return": -0.06004329943297959,
+        "worst_quarter_drawdown": -0.1876622883032535,
+        "passed": null
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.003866491019557529,
+        "worst_excess_return": -0.06777772041738173,
+        "worst_quarter_drawdown": -0.33154750441086234,
+        "passed": null
+      }
+    },
+    {
+      "order": 10,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": -0.005370066075131426,
+        "worst_excess_return": -0.06838574686299692,
+        "worst_quarter_drawdown": -0.21239857106047666,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": 0.006700468516210624,
+        "worst_excess_return": -0.05551800185102773,
+        "worst_quarter_drawdown": -0.3682933715778969,
+        "passed": null
+      }
+    },
+    {
+      "order": 11,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": -0.0012505763871553711,
+        "worst_excess_return": -0.05905557905686898,
+        "worst_quarter_drawdown": -0.20718047326689115,
+        "passed": null
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.0036688671416510513,
+        "worst_excess_return": -0.046470450537106744,
+        "worst_quarter_drawdown": -0.3611791059330275,
+        "passed": null
+      }
+    },
+    {
+      "order": 12,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.010213543983657819,
+        "worst_excess_return": -0.08112758995250635,
+        "worst_quarter_drawdown": -0.24335462879665715,
+        "passed": null
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "win_fraction": 0.5625,
+        "mean_excess_return": 0.012172479232887896,
+        "worst_excess_return": -0.03186153288570237,
+        "worst_quarter_drawdown": -0.3035184703244166,
+        "passed": null
+      }
+    },
+    {
+      "order": 13,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.007502383764035068,
+        "worst_excess_return": -0.0739281743965754,
+        "worst_quarter_drawdown": -0.22342543162255124,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.0005458324822341445,
+        "worst_excess_return": -0.030951216842019624,
+        "worst_quarter_drawdown": -0.3032122494132806,
+        "passed": null
+      }
+    },
+    {
+      "order": 14,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": -0.009633306407773032,
+        "worst_excess_return": -0.07159488801720504,
+        "worst_quarter_drawdown": -0.24545529530181787,
+        "passed": null
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "win_fraction": 0.375,
+        "mean_excess_return": 0.008298835384150029,
+        "worst_excess_return": -0.026023513318169877,
+        "worst_quarter_drawdown": -0.3204521269704199,
+        "passed": null
+      }
+    },
+    {
+      "order": 15,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": -0.005906284192370548,
+        "worst_excess_return": -0.05981852599829174,
+        "worst_quarter_drawdown": -0.23619209322027912,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.000632196880931489,
+        "worst_excess_return": -0.039788760741306994,
+        "worst_quarter_drawdown": -0.31036427989502124,
+        "passed": null
+      }
+    },
+    {
+      "order": 16,
+      "candidate": {
+        "family": "lowvol",
+        "n": 63,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.0035830675774672035,
+        "worst_excess_return": -0.0727308867806169,
+        "worst_quarter_drawdown": -0.1353152542738949,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": -0.009959740854804264,
+        "worst_excess_return": -0.04995208507054749,
+        "worst_quarter_drawdown": -0.2922627152771544,
+        "passed": null
+      }
+    },
+    {
+      "order": 17,
+      "candidate": {
+        "family": "lowvol",
+        "n": 63,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.000951573964163945,
+        "worst_excess_return": -0.06588907825949586,
+        "worst_quarter_drawdown": -0.14482586121735974,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.013884797811701093,
+        "worst_excess_return": -0.06658880667738076,
+        "worst_quarter_drawdown": -0.288168947445288,
+        "passed": null
+      }
+    },
+    {
+      "order": 18,
+      "candidate": {
+        "family": "lowvol",
+        "n": 126,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": -0.0016529402519413993,
+        "worst_excess_return": -0.07915049154006393,
+        "worst_quarter_drawdown": -0.1353152542738949,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.01315152643935271,
+        "worst_excess_return": -0.05369101054278147,
+        "worst_quarter_drawdown": -0.2952962400296042,
+        "passed": null
+      }
+    },
+    {
+      "order": 19,
+      "candidate": {
+        "family": "lowvol",
+        "n": 126,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": 0.0017067742141571862,
+        "worst_excess_return": -0.06258010914865009,
+        "worst_quarter_drawdown": -0.14302159347398002,
+        "passed": null
+      },
+      "validation": {
+        "wins": 3,
+        "rounds": 16,
+        "win_fraction": 0.1875,
+        "mean_excess_return": -0.01372284567910656,
+        "worst_excess_return": -0.05842294585306829,
+        "worst_quarter_drawdown": -0.28632843023104737,
+        "passed": null
+      }
+    },
+    {
+      "order": 20,
+      "candidate": {
+        "family": "lowvol",
+        "n": 252,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": 0.0005021520444255431,
+        "worst_excess_return": -0.0739519186460258,
+        "worst_quarter_drawdown": -0.1353152542738949,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.013071196788148082,
+        "worst_excess_return": -0.05438620233586722,
+        "worst_quarter_drawdown": -0.3065749840504399,
+        "passed": null
+      }
+    },
+    {
+      "order": 21,
+      "candidate": {
+        "family": "lowvol",
+        "n": 252,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.002041061774217187,
+        "worst_excess_return": -0.060228521541206725,
+        "worst_quarter_drawdown": -0.1437426877679404,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.011796159471506848,
+        "worst_excess_return": -0.061190483423026576,
+        "worst_quarter_drawdown": -0.30160347522436226,
+        "passed": null
+      }
+    },
+    {
+      "order": 22,
+      "candidate": {
+        "family": "lowvol",
+        "n": 504,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.0024010375353939553,
+        "worst_excess_return": -0.0739519186460258,
+        "worst_quarter_drawdown": -0.1353152542738949,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.01266695141313938,
+        "worst_excess_return": -0.08887325131882218,
+        "worst_quarter_drawdown": -0.30463965396435844,
+        "passed": null
+      }
+    },
+    {
+      "order": 23,
+      "candidate": {
+        "family": "lowvol",
+        "n": 504,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": 0.0024276269508977746,
+        "worst_excess_return": -0.05767412816383222,
+        "worst_quarter_drawdown": -0.14112435586750582,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.012964302106925465,
+        "worst_excess_return": -0.0595917945440505,
+        "worst_quarter_drawdown": -0.31240415269023725,
+        "passed": null
+      }
+    },
+    {
+      "order": 24,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 63,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": -0.011527174863727951,
+        "worst_excess_return": -0.08405132816293293,
+        "worst_quarter_drawdown": -0.15596231086425538,
+        "passed": null
+      },
+      "validation": {
+        "wins": 2,
+        "rounds": 16,
+        "win_fraction": 0.125,
+        "mean_excess_return": -0.019824550002407515,
+        "worst_excess_return": -0.06393022281010508,
+        "worst_quarter_drawdown": -0.36673251650907,
+        "passed": null
+      }
+    },
+    {
+      "order": 25,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 63,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.012836660178588852,
+        "worst_excess_return": -0.0813195567915912,
+        "worst_quarter_drawdown": -0.16246898814756627,
+        "passed": null
+      },
+      "validation": {
+        "wins": 2,
+        "rounds": 16,
+        "win_fraction": 0.125,
+        "mean_excess_return": -0.01611072739267233,
+        "worst_excess_return": -0.04678713744158314,
+        "worst_quarter_drawdown": -0.36328033269807314,
+        "passed": null
+      }
+    },
+    {
+      "order": 26,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 126,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.009386958967769579,
+        "worst_excess_return": -0.0771140126351072,
+        "worst_quarter_drawdown": -0.14019405112041294,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.0034501107794766422,
+        "worst_excess_return": -0.0635275891563234,
+        "worst_quarter_drawdown": -0.3605507531596732,
+        "passed": null
+      }
+    },
+    {
+      "order": 27,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 126,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.008757437232904753,
+        "worst_excess_return": -0.0778800276705931,
+        "worst_quarter_drawdown": -0.15158590073313605,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": 0.00021558229895862757,
+        "worst_excess_return": -0.05143206972960823,
+        "worst_quarter_drawdown": -0.36549661646577425,
+        "passed": null
+      }
+    },
+    {
+      "order": 28,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 252,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "win_fraction": 0.2916666666666667,
+        "mean_excess_return": -0.010736543419129699,
+        "worst_excess_return": -0.07557213127016349,
+        "worst_quarter_drawdown": -0.15937710581068631,
+        "passed": null
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "win_fraction": 0.5625,
+        "mean_excess_return": 0.008069351587404794,
+        "worst_excess_return": -0.06869298227291587,
+        "worst_quarter_drawdown": -0.30131005484351003,
+        "passed": null
+      }
+    },
+    {
+      "order": 29,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 252,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": -0.006436987958336647,
+        "worst_excess_return": -0.05767412816383222,
+        "worst_quarter_drawdown": -0.16339806355908837,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": 0.003007072077177958,
+        "worst_excess_return": -0.049226258444705184,
+        "worst_quarter_drawdown": -0.3258373345456196,
+        "passed": null
+      }
+    },
+    {
+      "order": 30,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 504,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.006397540782486767,
+        "worst_excess_return": -0.07031123807322759,
+        "worst_quarter_drawdown": -0.15003818808916247,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": 0.008745566505504856,
+        "worst_excess_return": -0.04016749064620795,
+        "worst_quarter_drawdown": -0.31511193742777677,
+        "passed": null
+      }
+    },
+    {
+      "order": 31,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 504,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.004734575239560279,
+        "worst_excess_return": -0.05519042734076729,
+        "worst_quarter_drawdown": -0.1598043357746407,
+        "passed": null
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "win_fraction": 0.4375,
+        "mean_excess_return": 0.00014920238350155102,
+        "worst_excess_return": -0.040362693571404984,
+        "worst_quarter_drawdown": -0.30609962755244713,
+        "passed": null
+      }
+    },
+    {
+      "order": 32,
+      "candidate": {
+        "family": "constant",
+        "index": 0
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.0026408202472161615,
+        "worst_excess_return": -0.07904757016363706,
+        "worst_quarter_drawdown": -0.11124467225683654,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.023897870317125064,
+        "worst_excess_return": -0.11373947613354307,
+        "worst_quarter_drawdown": -0.32217725661322316,
+        "passed": null
+      }
+    },
+    {
+      "order": 33,
+      "candidate": {
+        "family": "constant",
+        "index": 1
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "win_fraction": 0.5416666666666666,
+        "mean_excess_return": -0.006487014208493176,
+        "worst_excess_return": -0.15976599264775815,
+        "worst_quarter_drawdown": -0.33747542766257677,
+        "passed": null
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "win_fraction": 0.375,
+        "mean_excess_return": 0.04946920597593952,
+        "worst_excess_return": -0.12674101014804862,
+        "worst_quarter_drawdown": -0.4762800529491148,
+        "passed": null
+      }
+    },
+    {
+      "order": 34,
+      "candidate": {
+        "family": "constant",
+        "index": 2
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.000647468979388971,
+        "worst_excess_return": -0.08297618140357088,
+        "worst_quarter_drawdown": -0.2572727337965035,
+        "passed": null
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "win_fraction": 0.5,
+        "mean_excess_return": -0.005217689648636385,
+        "worst_excess_return": -0.08943459293804334,
+        "worst_quarter_drawdown": -0.4394040198141672,
+        "passed": null
+      }
+    },
+    {
+      "order": 35,
+      "candidate": {
+        "family": "constant",
+        "index": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "win_fraction": 0.2916666666666667,
+        "mean_excess_return": -0.017616693801761982,
+        "worst_excess_return": -0.17977943863171386,
+        "worst_quarter_drawdown": -0.2549110485168201,
+        "passed": null
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.05300131782542856,
+        "worst_excess_return": -0.3089376028142943,
+        "worst_quarter_drawdown": -0.6087908241891169,
+        "passed": null
+      }
+    },
+    {
+      "order": 36,
+      "candidate": {
+        "family": "constant",
+        "index": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "win_fraction": 0.3333333333333333,
+        "mean_excess_return": -0.0056342974950177776,
+        "worst_excess_return": -0.053045725739326643,
+        "worst_quarter_drawdown": -0.16562776196307116,
+        "passed": null
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "win_fraction": 0.375,
+        "mean_excess_return": -0.01103594247278502,
+        "worst_excess_return": -0.07747721301805721,
+        "worst_quarter_drawdown": -0.3053209028877115,
+        "passed": null
+      }
+    },
+    {
+      "order": 37,
+      "candidate": {
+        "family": "constant",
+        "index": 5
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "win_fraction": 0.5,
+        "mean_excess_return": 0.001161096392026555,
+        "worst_excess_return": -0.054300563514544375,
+        "worst_quarter_drawdown": -0.1878214888533123,
+        "passed": null
+      },
+      "validation": {
+        "wins": 14,
+        "rounds": 16,
+        "win_fraction": 0.875,
+        "mean_excess_return": 0.028085012500712297,
+        "worst_excess_return": -0.031049984695105337,
+        "worst_quarter_drawdown": -0.30649979766579927,
+        "passed": null
+      }
+    },
+    {
+      "order": 38,
+      "candidate": {
+        "family": "constant",
+        "index": 6
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "win_fraction": 0.5416666666666666,
+        "mean_excess_return": 0.007761936288307579,
+        "worst_excess_return": -0.05345364003123876,
+        "worst_quarter_drawdown": -0.18620254118126534,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.017795997769673874,
+        "worst_excess_return": -0.11131201060419005,
+        "worst_quarter_drawdown": -0.2934559996685798,
+        "passed": null
+      }
+    },
+    {
+      "order": 39,
+      "candidate": {
+        "family": "constant",
+        "index": 7
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": -0.002326663161317563,
+        "worst_excess_return": -0.13075097451100148,
+        "worst_quarter_drawdown": -0.13423189266885982,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.025376483064474938,
+        "worst_excess_return": -0.1840075389439575,
+        "worst_quarter_drawdown": -0.38140308089531105,
+        "passed": null
+      }
+    },
+    {
+      "order": 40,
+      "candidate": {
+        "family": "constant",
+        "index": 8
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": 0.004351702602966005,
+        "worst_excess_return": -0.049890055192059135,
+        "worst_quarter_drawdown": -0.15921868201701528,
+        "passed": null
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "win_fraction": 0.5625,
+        "mean_excess_return": 0.010205708203764631,
+        "worst_excess_return": -0.08297397447639154,
+        "worst_quarter_drawdown": -0.26413486156263954,
+        "passed": null
+      }
+    },
+    {
+      "order": 41,
+      "candidate": {
+        "family": "constant",
+        "index": 9
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "win_fraction": 0.5416666666666666,
+        "mean_excess_return": 0.00874659845040518,
+        "worst_excess_return": -0.09281906403496598,
+        "worst_quarter_drawdown": -0.17893857161675342,
+        "passed": null
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "win_fraction": 0.5,
+        "mean_excess_return": -0.0039050474262463525,
+        "worst_excess_return": -0.06905383016665112,
+        "worst_quarter_drawdown": -0.26801152425576,
+        "passed": null
+      }
+    },
+    {
+      "order": 42,
+      "candidate": {
+        "family": "constant",
+        "index": 10
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "win_fraction": 0.4583333333333333,
+        "mean_excess_return": 0.005968297647870634,
+        "worst_excess_return": -0.07488592923951887,
+        "worst_quarter_drawdown": -0.25238182840843826,
+        "passed": null
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "win_fraction": 0.5625,
+        "mean_excess_return": -0.01149150835085392,
+        "worst_excess_return": -0.10259049706684387,
+        "worst_quarter_drawdown": -0.43652472498944517,
+        "passed": null
+      }
+    },
+    {
+      "order": 43,
+      "candidate": {
+        "family": "constant",
+        "index": 11
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "win_fraction": 0.4166666666666667,
+        "mean_excess_return": -0.002323601716957391,
+        "worst_excess_return": -0.03928446045741485,
+        "worst_quarter_drawdown": -0.21847417365321886,
+        "passed": null
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "win_fraction": 0.3125,
+        "mean_excess_return": -0.007349748558945539,
+        "worst_excess_return": -0.047966531515989064,
+        "worst_quarter_drawdown": -0.37955404977132723,
+        "passed": null
+      }
+    },
+    {
+      "order": 44,
+      "candidate": {
+        "family": "equal"
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "win_fraction": 0.5,
+        "mean_excess_return": -0.0007714901432062243,
+        "worst_excess_return": -0.015343535244881856,
+        "worst_quarter_drawdown": -0.18629029431192579,
+        "passed": null
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "win_fraction": 0.25,
+        "mean_excess_return": -0.006687419001029378,
+        "worst_excess_return": -0.030466986573093102,
+        "worst_quarter_drawdown": -0.36923464458758604,
+        "passed": null
+      }
+    }
+  ]
+}

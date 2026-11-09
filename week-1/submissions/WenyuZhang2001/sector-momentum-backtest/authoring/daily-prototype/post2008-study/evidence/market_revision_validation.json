@@ -1,0 +1,16 @@
+{
+  "export_checks": {
+    "development": {
+      "matching_industry_dates": 2014,
+      "no_post2020_data": true
+    },
+    "validation": {
+      "matching_industry_dates": 1007,
+      "no_post2020_data": true
+    }
+  },
+  "market_aligned_source_identical_to_prior": true,
+  "prior_result_reused_not_rerun": true,
+  "learned_feature_labels_mature_by": "20161230",
+  "learned_interpreter_checks": 30
+}

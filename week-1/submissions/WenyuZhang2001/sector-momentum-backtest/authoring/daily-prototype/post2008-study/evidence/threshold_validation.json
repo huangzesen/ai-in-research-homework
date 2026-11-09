@@ -1,0 +1,12 @@
+{
+  "all_threshold_counts_independently_decimal_checked": true,
+  "zero_threshold_matches_saved_wins": true,
+  "win_counts_monotone_with_threshold": true,
+  "quarters_and_market_wealth_aligned": true,
+  "chart_rows_match_evidence": true,
+  "chart_payload_count": 1,
+  "chart_builtin_validator": "unavailable: host Node runtime not found",
+  "rendering": "not inspected",
+  "no_model_refit": true,
+  "reward_or_hurdle_changed": false
+}

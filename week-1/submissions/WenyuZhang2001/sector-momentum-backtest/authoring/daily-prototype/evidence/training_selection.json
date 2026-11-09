@@ -1,0 +1,146 @@
+{
+  "primary_metric": "quarterly win fraction versus hidden market during final replay",
+  "selection_proxy": "quarterly wins versus daily equal-weight industry portfolio on visible training data only",
+  "selection_period": "1980Q1\u20131999Q4",
+  "market_data_used": false,
+  "post1999_data_used": false,
+  "tie_break": "wins, then mean excess, then grid order",
+  "winner": {
+    "lookback": 252,
+    "skip": 0,
+    "k": 3,
+    "wins": 53,
+    "rounds": 80,
+    "mean_excess": 0.008255925069662117
+  },
+  "candidates": [
+    {
+      "lookback": 63,
+      "skip": 0,
+      "k": 3,
+      "wins": 38,
+      "rounds": 80,
+      "mean_excess": 0.00037214375449131227
+    },
+    {
+      "lookback": 63,
+      "skip": 0,
+      "k": 4,
+      "wins": 41,
+      "rounds": 80,
+      "mean_excess": 0.0027258265528611976
+    },
+    {
+      "lookback": 63,
+      "skip": 21,
+      "k": 3,
+      "wins": 30,
+      "rounds": 80,
+      "mean_excess": -0.015388459303587617
+    },
+    {
+      "lookback": 63,
+      "skip": 21,
+      "k": 4,
+      "wins": 27,
+      "rounds": 80,
+      "mean_excess": -0.01421946041760216
+    },
+    {
+      "lookback": 126,
+      "skip": 0,
+      "k": 3,
+      "wins": 41,
+      "rounds": 80,
+      "mean_excess": 0.0009363938418412807
+    },
+    {
+      "lookback": 126,
+      "skip": 0,
+      "k": 4,
+      "wins": 40,
+      "rounds": 80,
+      "mean_excess": 0.0012304388163539514
+    },
+    {
+      "lookback": 126,
+      "skip": 21,
+      "k": 3,
+      "wins": 28,
+      "rounds": 80,
+      "mean_excess": -0.010860391086211132
+    },
+    {
+      "lookback": 126,
+      "skip": 21,
+      "k": 4,
+      "wins": 30,
+      "rounds": 80,
+      "mean_excess": -0.009047278075069299
+    },
+    {
+      "lookback": 252,
+      "skip": 0,
+      "k": 3,
+      "wins": 53,
+      "rounds": 80,
+      "mean_excess": 0.008255925069662117
+    },
+    {
+      "lookback": 252,
+      "skip": 0,
+      "k": 4,
+      "wins": 51,
+      "rounds": 80,
+      "mean_excess": 0.0069482880775922325
+    },
+    {
+      "lookback": 252,
+      "skip": 21,
+      "k": 3,
+      "wins": 43,
+      "rounds": 80,
+      "mean_excess": 0.002629814104094963
+    },
+    {
+      "lookback": 252,
+      "skip": 21,
+      "k": 4,
+      "wins": 41,
+      "rounds": 80,
+      "mean_excess": 0.0011272744014251116
+    },
+    {
+      "lookback": 504,
+      "skip": 0,
+      "k": 3,
+      "wins": 45,
+      "rounds": 80,
+      "mean_excess": 0.004478803917879924
+    },
+    {
+      "lookback": 504,
+      "skip": 0,
+      "k": 4,
+      "wins": 46,
+      "rounds": 80,
+      "mean_excess": 0.0019721341906083238
+    },
+    {
+      "lookback": 504,
+      "skip": 21,
+      "k": 3,
+      "wins": 44,
+      "rounds": 80,
+      "mean_excess": 0.0021750118270141075
+    },
+    {
+      "lookback": 504,
+      "skip": 21,
+      "k": 4,
+      "wins": 40,
+      "rounds": 80,
+      "mean_excess": -0.0009752157903723843
+    }
+  ]
+}

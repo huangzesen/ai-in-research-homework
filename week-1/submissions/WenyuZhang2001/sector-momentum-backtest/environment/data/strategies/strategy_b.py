@@ -1,0 +1,3 @@
+def strategy(history):
+    scores = add(add(add(add(add(add(add(mul(compound(window(history, -21, None)), -0.3973929279373768), mul(compound(window(history, -63, None)), 0.11270133468838857)), mul(compound(window(history, -126, None)), -0.018867921680222853)), mul(compound(window(history, -252, None)), 0.1270129250559759)), mul(volatility(window(history, -21, None)), 3.457888420377352)), mul(volatility(window(history, -63, None)), 6.890145333478187)), mul(volatility(window(history, -126, None)), -14.61377549847866)), mul(volatility(window(history, -252, None)), 2.908696427183835))
+    return equal_weights(topk(scores, 3))

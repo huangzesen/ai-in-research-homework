@@ -1,0 +1,50 @@
+{
+  "revision": "one bounded learned-family extension",
+  "features": [
+    "compound21",
+    "compound63",
+    "compound126",
+    "compound252",
+    "volatility21",
+    "volatility63",
+    "volatility126",
+    "volatility252"
+  ],
+  "learner": "shared ridge least-squares score for binary industry quarter-end market-outperformance label, not calibrated probability",
+  "training_features_dates": [
+    "2011-01-01",
+    "2016-12-31"
+  ],
+  "training_labels_mature_by": "2016-12-31",
+  "labels": "each industry bought at current daily return start and liquidated at calendar-quarter end, same specified entry/exit cost as market; skip fewer than five remaining sessions",
+  "ridge_penalties": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "top_k": [
+    3,
+    4
+  ],
+  "count": 6,
+  "selection": [
+    "most 2017\u20132020 actual quarterly market wins",
+    "highest validation mean excess",
+    "earliest candidate order"
+  ],
+  "feature_scaling": "training-only pooled mean and standard deviation",
+  "final_period": [
+    "2021-01-01",
+    "2024-12-31"
+  ],
+  "final_period_previously_inspected": true,
+  "no_final_period_tuning": true,
+  "limitations": [
+    "overlapping labels are dependent",
+    "industry portfolios not executable securities",
+    "close-to-close timing idealized",
+    "small validation and evaluation samples",
+    "linear score not calibrated probability"
+  ],
+  "pass_threshold": null
+}

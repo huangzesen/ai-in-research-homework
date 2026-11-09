@@ -1,0 +1,70 @@
+{
+  "reference_top3": {
+    "start": "2000-01",
+    "end": "2024-12",
+    "months": 300,
+    "strategy_wealth": 15.054224209302697,
+    "market_wealth": 6.59998734024308,
+    "strategy_cagr": 0.11456739737191102,
+    "market_cagr": 0.07840458111711301,
+    "max_drawdown": -0.39578356498204226,
+    "turnover": 150.78064694985565,
+    "passed": true
+  },
+  "alternative_top4": {
+    "start": "2000-01",
+    "end": "2024-12",
+    "months": 300,
+    "strategy_wealth": 11.682569590940068,
+    "market_wealth": 6.59998734024308,
+    "strategy_cagr": 0.10332011258435325,
+    "market_cagr": 0.07840458111711301,
+    "max_drawdown": -0.40220552323594305,
+    "turnover": 116.23336116792035,
+    "passed": true
+  },
+  "equal_weight": {
+    "start": "2000-01",
+    "end": "2024-12",
+    "months": 300,
+    "strategy_wealth": 8.101130887145723,
+    "market_wealth": 6.59998734024308,
+    "strategy_cagr": 0.0872810677532434,
+    "market_cagr": 0.07840458111711301,
+    "max_drawdown": -0.49606275652621723,
+    "turnover": 8.439303375291626,
+    "passed": true
+  },
+  "reversal_top3": {
+    "start": "2000-01",
+    "end": "2024-12",
+    "months": 300,
+    "strategy_wealth": 3.5550988580077414,
+    "market_wealth": 6.59998734024308,
+    "strategy_cagr": 0.05204439588970278,
+    "market_cagr": 0.07840458111711301,
+    "max_drawdown": -0.6538299195158517,
+    "turnover": 138.36060555516588,
+    "passed": false
+  },
+  "zero_weights": {
+    "passed": false,
+    "error": "Weights must sum to one"
+  },
+  "file_read": {
+    "rejected": true
+  },
+  "attribute": {
+    "rejected": true
+  },
+  "import": {
+    "rejected": true
+  },
+  "future_index": {
+    "rejected": true
+  },
+  "missing_artifact": {
+    "passed": false,
+    "reason": "Verifier requires strategy.py; empty results directory fails."
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "period": "2021Q1\u20132024Q4",
+  "data_end": "2024-12-31",
+  "rounds": 16,
+  "threshold_unit": "percentage points of quarterly net return above market, not a return multiple or wealth ratio",
+  "win_test": "strategy_wealth - market_wealth > threshold_pp/100 + 1e-10",
+  "models_refit": false,
+  "threshold_is_descriptive_not_approved_hurdle": true,
+  "final_data_previously_inspected": true,
+  "sources": {
+    "market_target_final_evaluation.json": "1584fd9591693a59fd2789520d0142cab63248a186e052c2fb4e9d4e0e01cd93",
+    "learned_final_evaluation.json": "884ab0a66fa6520e266e9c1b70f94d67297e01afc194756c5a3633d5545a24d9"
+  },
+  "thresholds_pp": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "methods": {
+    "frozen_rule_BusEq": {
+      "counts": {
+        "0": 9,
+        "1": 9,
+        "2": 8,
+        "5": 3,
+        "10": 1,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -4.590839230135035,
+      "median_excess_pp": 2.04069852758641,
+      "maximum_excess_pp": 13.378902636751855
+    },
+    "frozen_learned": {
+      "counts": {
+        "0": 4,
+        "1": 3,
+        "2": 2,
+        "5": 2,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -10.691281927834595,
+      "median_excess_pp": -2.2261947130894075,
+      "maximum_excess_pp": 6.641267943142537
+    },
+    "equal_weight_daily": {
+      "counts": {
+        "0": 7,
+        "1": 4,
+        "2": 4,
+        "5": 0,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -3.2526381835289664,
+      "median_excess_pp": -0.5927396235755167,
+      "maximum_excess_pp": 4.671479086757979
+    },
+    "constant_NoDur": {
+      "counts": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "5": 2,
+        "10": 1,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -9.337903997374553,
+      "median_excess_pp": -3.2108033277492676,
+      "maximum_excess_pp": 13.957541842966448
+    },
+    "constant_Durbl": {
+      "counts": {
+        "0": 9,
+        "1": 8,
+        "2": 7,
+        "5": 6,
+        "10": 6,
+        "20": 2,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -44.63557108939743,
+      "median_excess_pp": 1.0747373557387307,
+      "maximum_excess_pp": 36.05484380410196
+    },
+    "constant_Manuf": {
+      "counts": {
+        "0": 6,
+        "1": 5,
+        "2": 4,
+        "5": 2,
+        "10": 1,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -7.330329393413637,
+      "median_excess_pp": -1.4423543179889142,
+      "maximum_excess_pp": 15.222196027326817
+    },
+    "constant_Enrgy": {
+      "counts": {
+        "0": 9,
+        "1": 8,
+        "2": 8,
+        "5": 6,
+        "10": 5,
+        "20": 2,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -19.126697027195604,
+      "median_excess_pp": 1.9879733320683768,
+      "maximum_excess_pp": 45.24723287305248
+    },
+    "constant_Chems": {
+      "counts": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "5": 3,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -11.612689229436434,
+      "median_excess_pp": -4.117435917207507,
+      "maximum_excess_pp": 8.574378348745714
+    },
+    "constant_BusEq": {
+      "counts": {
+        "0": 9,
+        "1": 9,
+        "2": 8,
+        "5": 3,
+        "10": 1,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -4.590839230135035,
+      "median_excess_pp": 2.04069852758641,
+      "maximum_excess_pp": 13.378902636751855
+    },
+    "constant_Telcm": {
+      "counts": {
+        "0": 4,
+        "1": 4,
+        "2": 2,
+        "5": 1,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -15.836867141863987,
+      "median_excess_pp": -3.1521176003724447,
+      "maximum_excess_pp": 7.87860080490097
+    },
+    "constant_Utils": {
+      "counts": {
+        "0": 7,
+        "1": 7,
+        "2": 5,
+        "5": 3,
+        "10": 3,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -10.355357776655005,
+      "median_excess_pp": -1.4689050893962663,
+      "maximum_excess_pp": 11.745285278169494
+    },
+    "constant_Shops": {
+      "counts": {
+        "0": 7,
+        "1": 5,
+        "2": 5,
+        "5": 1,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -6.721260435588183,
+      "median_excess_pp": -0.3463126364412261,
+      "maximum_excess_pp": 6.6758761367437085
+    },
+    "constant_Hlth": {
+      "counts": {
+        "0": 4,
+        "1": 2,
+        "2": 2,
+        "5": 2,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -12.181294560715694,
+      "median_excess_pp": -1.2725200852678253,
+      "maximum_excess_pp": 9.456388460386734
+    },
+    "constant_Money": {
+      "counts": {
+        "0": 10,
+        "1": 10,
+        "2": 8,
+        "5": 2,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -13.103887362506084,
+      "median_excess_pp": 2.0275646238049894,
+      "maximum_excess_pp": 8.140856363630732
+    },
+    "constant_Other": {
+      "counts": {
+        "0": 9,
+        "1": 7,
+        "2": 3,
+        "5": 1,
+        "10": 0,
+        "20": 0,
+        "50": 0,
+        "100": 0
+      },
+      "minimum_excess_pp": -6.1451403201068455,
+      "median_excess_pp": 0.3909803759860442,
+      "maximum_excess_pp": 5.4573711034235695
+    }
+  },
+  "single_industry_hindsight_envelope": {
+    "0": {
+      "wins": 10,
+      "methods": [
+        "constant_Money"
+      ]
+    },
+    "1": {
+      "wins": 10,
+      "methods": [
+        "constant_Money"
+      ]
+    },
+    "2": {
+      "wins": 8,
+      "methods": [
+        "constant_Enrgy",
+        "constant_BusEq",
+        "constant_Money"
+      ]
+    },
+    "5": {
+      "wins": 6,
+      "methods": [
+        "constant_Durbl",
+        "constant_Enrgy"
+      ]
+    },
+    "10": {
+      "wins": 6,
+      "methods": [
+        "constant_Durbl"
+      ]
+    },
+    "20": {
+      "wins": 2,
+      "methods": [
+        "constant_Durbl",
+        "constant_Enrgy"
+      ]
+    },
+    "50": {
+      "wins": 0,
+      "methods": [
+        "constant_NoDur",
+        "constant_Durbl",
+        "constant_Manuf",
+        "constant_Enrgy",
+        "constant_Chems",
+        "constant_BusEq",
+        "constant_Telcm",
+        "constant_Utils",
+        "constant_Shops",
+        "constant_Hlth",
+        "constant_Money",
+        "constant_Other"
+      ]
+    },
+    "100": {
+      "wins": 0,
+      "methods": [
+        "constant_NoDur",
+        "constant_Durbl",
+        "constant_Manuf",
+        "constant_Enrgy",
+        "constant_Chems",
+        "constant_BusEq",
+        "constant_Telcm",
+        "constant_Utils",
+        "constant_Shops",
+        "constant_Hlth",
+        "constant_Money",
+        "constant_Other"
+      ]
+    }
+  },
+  "all_counts_independently_checked": true
+}

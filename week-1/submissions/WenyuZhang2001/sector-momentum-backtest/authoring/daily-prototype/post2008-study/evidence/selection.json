@@ -1,0 +1,854 @@
+{
+  "data_max": "2020-12-31",
+  "no_market_series_used": true,
+  "no_final_period_used_for_selection": true,
+  "opponent": "cost-matched daily equal industry weight proxy",
+  "winner": {
+    "order": 37,
+    "candidate": {
+      "family": "constant",
+      "index": 5
+    },
+    "development": {
+      "wins": 12,
+      "rounds": 24,
+      "mean_excess": 0.0019325865352327793
+    },
+    "validation": {
+      "wins": 14,
+      "rounds": 16,
+      "mean_excess": 0.034772431501741675
+    }
+  },
+  "source_sha256": "09da7ee3151ad3d8f9d68c43fbc705ca0a5973bb98e76cb31b27c4922e065849",
+  "all_candidates": [
+    {
+      "order": 0,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.007132936823940954
+      },
+      "validation": {
+        "wins": 3,
+        "rounds": 16,
+        "mean_excess": -0.011010784560949997
+      }
+    },
+    {
+      "order": 1,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.011410841626692309
+      },
+      "validation": {
+        "wins": 3,
+        "rounds": 16,
+        "mean_excess": -0.010111546889682861
+      }
+    },
+    {
+      "order": 2,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "mean_excess": -0.01617676894215371
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "mean_excess": -0.01936323051377918
+      }
+    },
+    {
+      "order": 3,
+      "candidate": {
+        "family": "momentum",
+        "n": 63,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 6,
+        "rounds": 24,
+        "mean_excess": -0.013838240603722666
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "mean_excess": -0.010846292544914496
+      }
+    },
+    {
+      "order": 4,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 6,
+        "rounds": 24,
+        "mean_excess": -0.009964263970853662
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": 0.008560321413833186
+      }
+    },
+    {
+      "order": 5,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "mean_excess": -0.008509083855015287
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "mean_excess": 0.006755811558578975
+      }
+    },
+    {
+      "order": 6,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "mean_excess": -0.007906723222538187
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "mean_excess": 0.007449338065552397
+      }
+    },
+    {
+      "order": 7,
+      "candidate": {
+        "family": "momentum",
+        "n": 126,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "mean_excess": -0.008623793120609444
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": 0.005380746826566626
+      }
+    },
+    {
+      "order": 8,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.008741798800095022
+      },
+      "validation": {
+        "wins": 10,
+        "rounds": 16,
+        "mean_excess": 0.011918201980625966
+      }
+    },
+    {
+      "order": 9,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 16,
+        "rounds": 24,
+        "mean_excess": -0.002226371760516039
+      },
+      "validation": {
+        "wins": 10,
+        "rounds": 16,
+        "mean_excess": 0.010553910020586907
+      }
+    },
+    {
+      "order": 10,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": -0.004598575931925202
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "mean_excess": 0.013387887517240002
+      }
+    },
+    {
+      "order": 11,
+      "candidate": {
+        "family": "momentum",
+        "n": 252,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "mean_excess": -0.00047908624394914684
+      },
+      "validation": {
+        "wins": 11,
+        "rounds": 16,
+        "mean_excess": 0.01035628614268043
+      }
+    },
+    {
+      "order": 12,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.009442053840451594
+      },
+      "validation": {
+        "wins": 10,
+        "rounds": 16,
+        "mean_excess": 0.018859898233917274
+      }
+    },
+    {
+      "order": 13,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "mean_excess": -0.006730893620828844
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": 0.006141586518795233
+      }
+    },
+    {
+      "order": 14,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 21,
+        "k": 3
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.008861816264566807
+      },
+      "validation": {
+        "wins": 10,
+        "rounds": 16,
+        "mean_excess": 0.014986254385179407
+      }
+    },
+    {
+      "order": 15,
+      "candidate": {
+        "family": "momentum",
+        "n": 504,
+        "skip": 21,
+        "k": 4
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": -0.0051347940491643235
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": 0.006055222120097889
+      }
+    },
+    {
+      "order": 16,
+      "candidate": {
+        "family": "lowvol",
+        "n": 63,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": -0.002811577434260979
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": -0.0032723218537748858
+      }
+    },
+    {
+      "order": 17,
+      "candidate": {
+        "family": "lowvol",
+        "n": 63,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": -0.00018008382095772066
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": -0.007197378810671715
+      }
+    },
+    {
+      "order": 18,
+      "candidate": {
+        "family": "lowvol",
+        "n": 126,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": -0.0008814501087351748
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.006464107438323333
+      }
+    },
+    {
+      "order": 19,
+      "candidate": {
+        "family": "lowvol",
+        "n": 126,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "mean_excess": 0.0024782643573634106
+      },
+      "validation": {
+        "wins": 4,
+        "rounds": 16,
+        "mean_excess": -0.007035426678077182
+      }
+    },
+    {
+      "order": 20,
+      "candidate": {
+        "family": "lowvol",
+        "n": 252,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": 0.0012736421876317673
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.006383777787118704
+      }
+    },
+    {
+      "order": 21,
+      "candidate": {
+        "family": "lowvol",
+        "n": 252,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "mean_excess": 0.0028125519174234115
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.00510874047047747
+      }
+    },
+    {
+      "order": 22,
+      "candidate": {
+        "family": "lowvol",
+        "n": 504,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "mean_excess": 0.0031725276786001796
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.005979532412110002
+      }
+    },
+    {
+      "order": 23,
+      "candidate": {
+        "family": "lowvol",
+        "n": 504,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": 0.003199117094103999
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.0062768831058960875
+      }
+    },
+    {
+      "order": 24,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 63,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": -0.010755684720521727
+      },
+      "validation": {
+        "wins": 3,
+        "rounds": 16,
+        "mean_excess": -0.013137131001378137
+      }
+    },
+    {
+      "order": 25,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 63,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "mean_excess": -0.012065170035382627
+      },
+      "validation": {
+        "wins": 2,
+        "rounds": 16,
+        "mean_excess": -0.009423308391642952
+      }
+    },
+    {
+      "order": 26,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 126,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "mean_excess": -0.008615468824563354
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": 0.0032373082215527357
+      }
+    },
+    {
+      "order": 27,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 126,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 8,
+        "rounds": 24,
+        "mean_excess": -0.007985947089698528
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "mean_excess": 0.0069030012999880055
+      }
+    },
+    {
+      "order": 28,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 252,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "mean_excess": -0.009965053275923475
+      },
+      "validation": {
+        "wins": 10,
+        "rounds": 16,
+        "mean_excess": 0.014756770588434172
+      }
+    },
+    {
+      "order": 29,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 252,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.005665497815130423
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "mean_excess": 0.009694491078207336
+      }
+    },
+    {
+      "order": 30,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 504,
+        "skip": 0,
+        "k": 3
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": -0.005626050639280543
+      },
+      "validation": {
+        "wins": 11,
+        "rounds": 16,
+        "mean_excess": 0.015432985506534234
+      }
+    },
+    {
+      "order": 31,
+      "candidate": {
+        "family": "mean_vol",
+        "n": 504,
+        "skip": 0,
+        "k": 4
+      },
+      "development": {
+        "wins": 9,
+        "rounds": 24,
+        "mean_excess": -0.003963085096354055
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": 0.006836621384530929
+      }
+    },
+    {
+      "order": 32,
+      "candidate": {
+        "family": "constant",
+        "index": 0
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "mean_excess": 0.003412310390422386
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.017210451316095686
+      }
+    },
+    {
+      "order": 33,
+      "candidate": {
+        "family": "constant",
+        "index": 1
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": -0.005715524065286952
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "mean_excess": 0.0561566249769689
+      }
+    },
+    {
+      "order": 34,
+      "candidate": {
+        "family": "constant",
+        "index": 2
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": 0.00012402116381725337
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "mean_excess": 0.0014697293523929927
+      }
+    },
+    {
+      "order": 35,
+      "candidate": {
+        "family": "constant",
+        "index": 3
+      },
+      "development": {
+        "wins": 7,
+        "rounds": 24,
+        "mean_excess": -0.016845203658555758
+      },
+      "validation": {
+        "wins": 6,
+        "rounds": 16,
+        "mean_excess": -0.04631389882439918
+      }
+    },
+    {
+      "order": 36,
+      "candidate": {
+        "family": "constant",
+        "index": 4
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": -0.004862807351811553
+      },
+      "validation": {
+        "wins": 7,
+        "rounds": 16,
+        "mean_excess": -0.0043485234717556415
+      }
+    },
+    {
+      "order": 37,
+      "candidate": {
+        "family": "constant",
+        "index": 5
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "mean_excess": 0.0019325865352327793
+      },
+      "validation": {
+        "wins": 14,
+        "rounds": 16,
+        "mean_excess": 0.034772431501741675
+      }
+    },
+    {
+      "order": 38,
+      "candidate": {
+        "family": "constant",
+        "index": 6
+      },
+      "development": {
+        "wins": 15,
+        "rounds": 24,
+        "mean_excess": 0.008533426431513802
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "mean_excess": -0.011108578768644496
+      }
+    },
+    {
+      "order": 39,
+      "candidate": {
+        "family": "constant",
+        "index": 7
+      },
+      "development": {
+        "wins": 10,
+        "rounds": 24,
+        "mean_excess": -0.0015551730181113388
+      },
+      "validation": {
+        "wins": 5,
+        "rounds": 16,
+        "mean_excess": -0.01868906406344556
+      }
+    },
+    {
+      "order": 40,
+      "candidate": {
+        "family": "constant",
+        "index": 8
+      },
+      "development": {
+        "wins": 11,
+        "rounds": 24,
+        "mean_excess": 0.005123192746172229
+      },
+      "validation": {
+        "wins": 10,
+        "rounds": 16,
+        "mean_excess": 0.01689312720479401
+      }
+    },
+    {
+      "order": 41,
+      "candidate": {
+        "family": "constant",
+        "index": 9
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "mean_excess": 0.009518088593611404
+      },
+      "validation": {
+        "wins": 9,
+        "rounds": 16,
+        "mean_excess": 0.0027823715747830255
+      }
+    },
+    {
+      "order": 42,
+      "candidate": {
+        "family": "constant",
+        "index": 10
+      },
+      "development": {
+        "wins": 12,
+        "rounds": 24,
+        "mean_excess": 0.006739787791076858
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": -0.004804089349824542
+      }
+    },
+    {
+      "order": 43,
+      "candidate": {
+        "family": "constant",
+        "index": 11
+      },
+      "development": {
+        "wins": 13,
+        "rounds": 24,
+        "mean_excess": -0.0015521115737511665
+      },
+      "validation": {
+        "wins": 8,
+        "rounds": 16,
+        "mean_excess": -0.0006623295579161609
+      }
+    },
+    {
+      "order": 44,
+      "candidate": {
+        "family": "equal"
+      },
+      "development": {
+        "wins": 0,
+        "rounds": 24,
+        "mean_excess": 0.0
+      },
+      "validation": {
+        "wins": 0,
+        "rounds": 16,
+        "mean_excess": 0.0
+      }
+    }
+  ]
+}

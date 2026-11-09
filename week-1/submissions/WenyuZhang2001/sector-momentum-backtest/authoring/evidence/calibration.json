@@ -1,0 +1,38 @@
+{
+  "isolated_reference": {
+    "checks_passed": 2,
+    "checks_total": 2,
+    "passes": true
+  },
+  "prior_pipeline_reconciliation": {
+    "rows": 160,
+    "all_matched": true,
+    "note": "Shares policy interpreter and financial conventions; not independent market evidence."
+  },
+  "no_op": {
+    "checks_passed": 0,
+    "checks_total": 2,
+    "passes": false
+  },
+  "zero_transaction_cost_model": {
+    "checks_passed": 0,
+    "checks_total": 2,
+    "passes": false
+  },
+  "ignore_inflation_model": {
+    "checks_passed": 0,
+    "checks_total": 2,
+    "passes": false
+  },
+  "future_contributions_available_early": {
+    "checks_passed": 0,
+    "checks_total": 2,
+    "passes": false
+  },
+  "constant_negative_claims_with_other_correct_values": {
+    "checks_passed": 1,
+    "checks_total": 2,
+    "passes": false
+  },
+  "full_container_run": false
+}

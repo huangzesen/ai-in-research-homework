@@ -1,0 +1,15 @@
+{
+  "series": "CPIAUCNS",
+  "source": "U.S. Bureau of Labor Statistics via Federal Reserve Bank of St. Louis",
+  "url": "https://fred.stlouisfed.org/series/CPIAUCNS",
+  "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&cosd=2008-12-01&coed=2024-12-31",
+  "retrieved_date": "2026-11-08",
+  "start": "2008-12-01",
+  "end": "2024-12-01",
+  "frequency": "monthly",
+  "seasonal_adjustment": "not seasonally adjusted",
+  "sha256": "eee22b9487b168b76cb708d59ba432f3c621d0ad43f2978b11651a6ce0090729",
+  "use": "ex-post purchasing-power evaluation only, never strategy feature",
+  "daily_rf": "French archive RF: one-month T-bill rate daily return proxy; not long-duration bond total return or quoted annual yield",
+  "daily_rf_source": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_factors.html"
+}

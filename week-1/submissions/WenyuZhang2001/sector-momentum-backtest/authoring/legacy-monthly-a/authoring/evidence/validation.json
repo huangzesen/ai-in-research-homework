@@ -1,0 +1,11 @@
+{
+  "reference_artifact": "passed",
+  "no_op": "rejected",
+  "visible_training_rows": 882,
+  "chronology_calls": 300,
+  "first_history_rows": 882,
+  "last_history_rows": 1181,
+  "independent_accounting": "matched",
+  "runtime_copies": "identical",
+  "full_container_run": false
+}

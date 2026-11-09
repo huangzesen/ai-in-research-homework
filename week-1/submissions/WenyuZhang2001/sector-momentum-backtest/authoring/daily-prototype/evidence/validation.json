@@ -1,0 +1,12 @@
+{
+  "chronology_calls": 6289,
+  "quarter_count": 100,
+  "training_rows": 19612,
+  "exact_training_prefix": true,
+  "independent_single_industry_accounting": true,
+  "invalid_programs_rejected": true,
+  "zero_weights_rejected": true,
+  "runtime_copies_identical": true,
+  "pass_hurdle": "not selected",
+  "container_run": false
+}

@@ -1,0 +1,14 @@
+{
+  "accounting_checks": {
+    "old_lump_sum_outcomes_reproduced": true,
+    "all_flows_matched": true,
+    "passive_wealth_independently_checked": true,
+    "cpi_months_complete": true,
+    "no_model_refit": true
+  },
+  "chart_rows_match_results": true,
+  "chart_payload_count": 1,
+  "builtin_chart_validator": "unavailable: host Node not installed",
+  "rendering": "not inspected",
+  "new_reward_or_guardrail": false
+}

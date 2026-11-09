@@ -1,0 +1,9 @@
+{
+  "prefix_vs_interpreter_checks": 135,
+  "chronology_calls": 1005,
+  "final_quarters": 16,
+  "pre2009_rows_used": false,
+  "all_12_static_baselines_independently_checked": true,
+  "source_hash_unchanged": true,
+  "container_run": false
+}

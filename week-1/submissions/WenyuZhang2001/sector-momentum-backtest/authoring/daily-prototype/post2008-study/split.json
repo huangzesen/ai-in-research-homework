@@ -1,0 +1,48 @@
+{
+  "status": "research split; binary pass hurdle not selected",
+  "data_start": "2009-01-01",
+  "data_end": "2024-12-31",
+  "development": [
+    "2009-01-01",
+    "2016-12-31"
+  ],
+  "validation": [
+    "2017-01-01",
+    "2020-12-31"
+  ],
+  "evaluation": [
+    "2021-01-01",
+    "2024-12-31"
+  ],
+  "primary_metric": "fraction of calendar quarters beating market after costs",
+  "benchmark": "French broad U.S. market total return (Mkt-RF + RF), not S&P 500/Nasdaq",
+  "daily_rebalancing_allowed": true,
+  "no_pre2009_observations": true,
+  "model_frozen_before_evaluation": true,
+  "historical_evaluation_previously_inspected": true,
+  "quarterly_rounds_reset_capital_not_history": true,
+  "coverage": {
+    "development": {
+      "first_day": "20090102",
+      "last_day": "20161230",
+      "days": 2014,
+      "quarters": 32,
+      "sha256": "b4f4c708bbc95207065061019184e2d9823ab7d2cdc390ac2b2aae7a146db113"
+    },
+    "validation": {
+      "first_day": "20170103",
+      "last_day": "20201231",
+      "days": 1007,
+      "quarters": 16,
+      "sha256": "702eec1f96ab718bfac4e3ba9193846af147fc5176094d25df4f0802a8016068"
+    },
+    "evaluation": {
+      "first_day": "20210104",
+      "last_day": "20241231",
+      "days": 1005,
+      "quarters": 16
+    }
+  },
+  "training_validation_market_disclosed": true,
+  "market_disclosure_authorized": "2026-11-08 owner agreed to historical training/validation benchmark only"
+}

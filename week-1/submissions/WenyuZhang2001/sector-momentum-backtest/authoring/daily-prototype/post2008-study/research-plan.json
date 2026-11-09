@@ -1,0 +1,52 @@
+{
+  "status": "fixed before this study selection/evaluation",
+  "candidate_families": [
+    "compound_return_rank",
+    "low_volatility_rank",
+    "mean_return_divided_by_volatility_rank",
+    "12 single_industry_constants",
+    "equal_weight_daily"
+  ],
+  "lookbacks": [
+    63,
+    126,
+    252,
+    504
+  ],
+  "momentum_skips": [
+    0,
+    21
+  ],
+  "top_k": [
+    3,
+    4
+  ],
+  "count": 45,
+  "development_score_period": [
+    "2011-01-01",
+    "2016-12-31"
+  ],
+  "warmup": [
+    "2009-01-01",
+    "2010-12-31"
+  ],
+  "validation_score_period": [
+    "2017-01-01",
+    "2020-12-31"
+  ],
+  "selection_opponent": "daily equal-weight industry portfolio; market series not used",
+  "selection_rule": [
+    "most validation quarter wins versus proxy",
+    "most development quarter wins versus proxy",
+    "highest validation mean excess versus proxy",
+    "earliest fixed candidate order"
+  ],
+  "final_evaluation": [
+    "2021-01-01",
+    "2024-12-31"
+  ],
+  "final_opponent": "French Mkt-RF + RF",
+  "retune_after_final_evaluation": false,
+  "historical_final_period_previously_inspected": true,
+  "pass_threshold": null
+}

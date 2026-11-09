@@ -1,0 +1,3824 @@
+{
+  "period": "2021Q1\u20132024Q4",
+  "market_data_end": "2024-12-31",
+  "cpi_last_month": "2024-12",
+  "cpi_definition": "BLS CPI-U all items U.S. city average, not seasonally adjusted; quarter endpoint month-average proxies",
+  "cpi_use": "ex-post evaluation only; never a daily input",
+  "rf_definition": "French daily one-month T-bill rate proxy, not annual quoted yield or long-bond total return",
+  "rf_proxy_transaction_cost": 0.0,
+  "cost_model": "existing 10bp traded notional, quarter entry and liquidation; RF proxy assumed frictionless",
+  "primary_objective_unchanged": "quarterly wins versus market",
+  "joint_wins": "descriptive additional test, not approved new reward",
+  "cashflow_comparability": "Each account receives identical initial lump sum or identical 1/3 monthly contributions on each first trading day; monthly investor never has future contributions early",
+  "real_gain_definition": "terminal wealth / sum(contribution * CPI_end/CPI_prior_month_at_deposit) - 1; not IRR or annualized return",
+  "risks": [
+    "market is equity exposure, not stable guaranteed investment",
+    "CPI endpoints are monthly averages, not exact day prices",
+    "historical final period already inspected",
+    "small 16-quarter sample",
+    "idealized close-to-close fills and research portfolios",
+    "no taxes or additional market impact",
+    "RF proxy is not actual executable Treasury trading"
+  ],
+  "scenarios": {
+    "lump_sum": {
+      "summary": {
+        "frozen_rule_BusEq": {
+          "rounds": 16,
+          "wins_vs_market": 9,
+          "wins_vs_rf": 12,
+          "purchasing_power_positive_rounds": 12,
+          "joint_wins": 9,
+          "mean_terminal_wealth": 1.0436341069213064,
+          "worst_unitized_drawdown": -0.25825763916981437
+        },
+        "frozen_learned": {
+          "rounds": 16,
+          "wins_vs_market": 4,
+          "wins_vs_rf": 7,
+          "purchasing_power_positive_rounds": 7,
+          "joint_wins": 3,
+          "mean_terminal_wealth": 1.0039643498388096,
+          "worst_unitized_drawdown": -0.1800427096729449
+        },
+        "equal_weight_industries": {
+          "rounds": 16,
+          "wins_vs_market": 7,
+          "wins_vs_rf": 10,
+          "purchasing_power_positive_rounds": 10,
+          "joint_wins": 3,
+          "mean_terminal_wealth": 1.026248695800278,
+          "worst_unitized_drawdown": -0.17965387587054282
+        },
+        "constant_Money_hindsight_baseline": {
+          "rounds": 16,
+          "wins_vs_market": 10,
+          "wins_vs_rf": 10,
+          "purchasing_power_positive_rounds": 10,
+          "joint_wins": 6,
+          "mean_terminal_wealth": 1.034788980926217,
+          "worst_unitized_drawdown": -0.172892086931431
+        },
+        "market": {
+          "rounds": 16,
+          "wins_vs_market": 0,
+          "wins_vs_rf": 11,
+          "purchasing_power_positive_rounds": 11,
+          "joint_wins": 0,
+          "mean_terminal_wealth": 1.0287879227264123,
+          "worst_unitized_drawdown": -0.21053852911537907
+        },
+        "rf_proxy": {
+          "rounds": 16,
+          "wins_vs_market": 5,
+          "wins_vs_rf": 0,
+          "purchasing_power_positive_rounds": 8,
+          "joint_wins": 0,
+          "mean_terminal_wealth": 1.0071161039499532,
+          "worst_unitized_drawdown": 0.0
+        }
+      },
+      "quarters": {
+        "frozen_rule_BusEq": [
+          {
+            "terminal_wealth": 1.0257682804570372,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10680541064613991,
+            "fees": 0.0020267950755325694,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169037984597311,
+            "purchasing_power_gain_on_contributions": 0.008717129398801315,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.123613103467598,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08259143135152469,
+            "fees": 0.002124737841308907,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.025744024584996,
+            "purchasing_power_gain_on_contributions": 0.09541277018133121,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0163717081265187,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0689005513914821,
+            "fees": 0.0020173890972237426,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0096210470525881,
+            "purchasing_power_gain_on_contributions": 0.006686331563350301,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.113678716580029,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05695629024610105,
+            "fees": 0.0021147935100901192,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0163756334074587,
+            "purchasing_power_gain_on_contributions": 0.09573535607731576,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9022129672965197,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.2058092678643365,
+            "fees": 0.001903116083379902,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0312121146907125,
+            "purchasing_power_gain_on_contributions": -0.12509467795855278,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.7838864046695682,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.25825763916981437,
+            "fees": 0.0017846710757453152,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0306326172853246,
+            "purchasing_power_gain_on_contributions": -0.23941238466300763,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9345274013023864,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.20945851486434264,
+            "fees": 0.0019354628641665532,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0016772917643963,
+            "purchasing_power_gain_on_contributions": -0.06703744910072718,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0164338930021561,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10717912512117922,
+            "fees": 0.0020174513443465027,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9999629390043396,
+            "purchasing_power_gain_on_contributions": 0.016471564450395215,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.2071165236713999,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06866168715456833,
+            "fees": 0.00220832484851992,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169779344130836,
+            "purchasing_power_gain_on_contributions": 0.1869643212741372,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.1504877999516554,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.040748555432331246,
+            "fees": 0.002151639439391047,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0108436369419154,
+            "purchasing_power_gain_on_contributions": 0.13814615624648208,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9621871657359552,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08836663184786009,
+            "fees": 0.001963150316052008,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0087837461366267,
+            "purchasing_power_gain_on_contributions": -0.04619085168563031,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1488508998563025,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08117928789746187,
+            "fees": 0.0021500009007570597,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9966113148942944,
+            "purchasing_power_gain_on_contributions": 0.15275723111587935,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.118722102288168,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.03843485549366221,
+            "fees": 0.0021198419442324005,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0182105064124716,
+            "purchasing_power_gain_on_contributions": 0.09871396459052018,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.1104480347461818,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07769273372598373,
+            "fees": 0.002111559594340523,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0059007722551645,
+            "purchasing_power_gain_on_contributions": 0.10393397179388697,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.023268090771987,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1429724941935152,
+            "fees": 0.002024292383155143,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0035839898145937,
+            "purchasing_power_gain_on_contributions": 0.01961380527904777,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0605726188174407,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.037818559999999835,
+            "fees": 0.0020616342530705113,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0009641580584903,
+            "purchasing_power_gain_on_contributions": 0.05955104413985146,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          }
+        ],
+        "frozen_learned": [
+          {
+            "terminal_wealth": 1.030650733228346,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10160163389872645,
+            "fees": 0.016348274196624456,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169037984597311,
+            "purchasing_power_gain_on_contributions": 0.013518422086176596,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.052708295128048,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06283251857743888,
+            "fees": 0.010644374550469645,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.025744024584996,
+            "purchasing_power_gain_on_contributions": 0.02628752388195621,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9821091813701244,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08142353838189154,
+            "fees": 0.009370192910952268,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0096210470525881,
+            "purchasing_power_gain_on_contributions": -0.027249695083892966,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0925320123282227,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.11198538675048386,
+            "fees": 0.00920474759468067,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0163756334074587,
+            "purchasing_power_gain_on_contributions": 0.07492936313855281,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9240433786708794,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1800427096729449,
+            "fees": 0.015937847935531654,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0312121146907125,
+            "purchasing_power_gain_on_contributions": -0.1039250164860368,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8914174937051752,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.15521890674510774,
+            "fees": 0.014125478335832721,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0306326172853246,
+            "purchasing_power_gain_on_contributions": -0.13507735078949912,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9390957528721369,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1439744570203476,
+            "fees": 0.016832211727682716,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0016772917643963,
+            "purchasing_power_gain_on_contributions": -0.06247674715878382,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.120073156574466,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06452349149568704,
+            "fees": 0.007712018428725598,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9999629390043396,
+            "purchasing_power_gain_on_contributions": 0.12011466913935798,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9664146780255324,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.11647883821971727,
+            "fees": 0.014887670019595987,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169779344130836,
+            "purchasing_power_gain_on_contributions": -0.0497191282883952,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.010002965263297,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06575587683386097,
+            "fees": 0.022140737915482853,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0108436369419154,
+            "purchasing_power_gain_on_contributions": -0.0008316535296811756,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9000715297880264,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.12777784139359571,
+            "fees": 0.011294681497625456,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0087837461366267,
+            "purchasing_power_gain_on_contributions": -0.10776563040883558,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1238338366532257,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.059474184133236796,
+            "fees": 0.01764888264007677,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9966113148942944,
+            "purchasing_power_gain_on_contributions": 0.12765510471093244,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0226666516614018,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.051263006317630255,
+            "fees": 0.010826692095877144,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0182105064124716,
+            "purchasing_power_gain_on_contributions": 0.004376447916090376,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9783954465787649,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.04866746595548921,
+            "fees": 0.01462364987760254,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0059007722551645,
+            "purchasing_power_gain_on_contributions": -0.0273439751067438,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0528793623253154,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.09761338196999647,
+            "fees": 0.015184750378610778,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0035839898145937,
+            "purchasing_power_gain_on_contributions": 0.049119329334686546,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9765351232479897,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07803219076118306,
+            "fees": 0.014237698225293033,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0009641580584903,
+            "purchasing_power_gain_on_contributions": -0.024405504047101956,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          }
+        ],
+        "equal_weight_industries": [
+          {
+            "terminal_wealth": 1.0806400973936292,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.04319754317101154,
+            "fees": 0.0025712314967735435,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169037984597311,
+            "purchasing_power_gain_on_contributions": 0.06267682255729334,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0605555961519875,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.038208598480493405,
+            "fees": 0.0024259119823936293,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.025744024584996,
+            "purchasing_power_gain_on_contributions": 0.03393787410175331,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.988460833387097,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.039422244330279965,
+            "fees": 0.0023178528286260684,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0096210470525881,
+            "purchasing_power_gain_on_contributions": -0.020958570274723032,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.087025763415987,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06240795978720781,
+            "fees": 0.0025270229503746595,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0163756334074587,
+            "purchasing_power_gain_on_contributions": 0.0695118297667856,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9891256026879068,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.09954246482799811,
+            "fees": 0.0024800813778139722,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0312121146907125,
+            "purchasing_power_gain_on_contributions": -0.04081266250002169,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8563709274829928,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.17965387587054282,
+            "fees": 0.0023587256738840457,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0306326172853246,
+            "purchasing_power_gain_on_contributions": -0.1690822577120985,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9637546683047231,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.15427011041363003,
+            "fees": 0.0024160374051300053,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0016772917643963,
+            "purchasing_power_gain_on_contributions": -0.037859122665019895,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0564652544686173,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08013909907430672,
+            "fees": 0.002514433939419473,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9999629390043396,
+            "purchasing_power_gain_on_contributions": 0.05650440957395575,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0579496032308484,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08134502984005842,
+            "fees": 0.0024869186889201677,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169779344130836,
+            "purchasing_power_gain_on_contributions": 0.040287667442273856,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0517201877865456,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.03487394837972124,
+            "fees": 0.0024290258901661314,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0108436369419154,
+            "purchasing_power_gain_on_contributions": 0.040438055254810035,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9674426356512792,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06361702136721359,
+            "fees": 0.002304692996029525,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0087837461366267,
+            "purchasing_power_gain_on_contributions": -0.040981142532949155,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0842802969832155,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.060458672960635895,
+            "fees": 0.002426443897400492,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9966113148942944,
+            "purchasing_power_gain_on_contributions": 0.08796707480510557,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.067589219204548,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.02594482897774486,
+            "fees": 0.0024018207518488825,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0182105064124716,
+            "purchasing_power_gain_on_contributions": 0.048495583654951435,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0011730293739611,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.051488191942511974,
+            "fees": 0.0023400718913098874,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0059007722551645,
+            "purchasing_power_gain_on_contributions": -0.004700009197332711,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0874444197493267,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06391953785588533,
+            "fees": 0.0025378734583007606,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0035839898145937,
+            "purchasing_power_gain_on_contributions": 0.08356094834695971,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0199809975317835,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.04693264522902307,
+            "fees": 0.0024706844509618728,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0009641580584903,
+            "purchasing_power_gain_on_contributions": 0.018998521895308373,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ],
+        "constant_Money_hindsight_baseline": [
+          {
+            "terminal_wealth": 1.1376338093814504,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07881475508228297,
+            "fees": 0.002138772581963414,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169037984597311,
+            "purchasing_power_gain_on_contributions": 0.11872313890909325,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0692318888030974,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06579158161603105,
+            "fees": 0.0020703021909940916,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.025744024584996,
+            "purchasing_power_gain_on_contributions": 0.04239640999682748,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0128173792206567,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05299397718861376,
+            "fees": 0.002013831210431088,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0096210470525881,
+            "purchasing_power_gain_on_contributions": 0.003165873153496257,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0553941052538427,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0836531995709614,
+            "fees": 0.0020564505558096522,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0163756334074587,
+            "purchasing_power_gain_on_contributions": 0.03838981432049127,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9645833200994985,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1386328506064668,
+            "fees": 0.001965548868968467,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0312121146907125,
+            "purchasing_power_gain_on_contributions": -0.06461211388230992,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8590964398332155,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.172892086931431,
+            "fees": 0.0018599563962294467,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0306326172853246,
+            "purchasing_power_gain_on_contributions": -0.16643775344888034,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9681741074136946,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.14709957290449327,
+            "fees": 0.001969143250664359,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0016772917643963,
+            "purchasing_power_gain_on_contributions": -0.033447083832446545,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1139690275714962,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.074732121565522,
+            "fees": 0.0021150841116831793,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9999629390043396,
+            "purchasing_power_gain_on_contributions": 0.11401031390290539,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9422886236788205,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.14998675456038013,
+            "fees": 0.001943231855534355,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169779344130836,
+            "purchasing_power_gain_on_contributions": -0.07344241030889986,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0369073615843898,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06437654525776848,
+            "fees": 0.0020379453068912813,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0108436369419154,
+            "purchasing_power_gain_on_contributions": 0.02578413088825937,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0024598845042976,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0613750153995265,
+            "fees": 0.00200346334785215,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0087837461366267,
+            "purchasing_power_gain_on_contributions": -0.0062687981012261584,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1544758022457464,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06633859875545411,
+            "fees": 0.0021556314336794256,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9966113148942944,
+            "purchasing_power_gain_on_contributions": 0.1584012593397015,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0921019994447507,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.026034371515237242,
+            "fees": 0.00209319519463939,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0182105064124716,
+            "purchasing_power_gain_on_contributions": 0.0725699573584504,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.987358811085937,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06303474607715465,
+            "fees": 0.0019883471582441813,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0059007722551645,
+            "purchasing_power_gain_on_contributions": -0.01843319110657171,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.096660846106368,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07555268198536758,
+            "fees": 0.0020977586047110793,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0035839898145937,
+            "purchasing_power_gain_on_contributions": 0.09274446108787537,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0634702885922078,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08850337590493895,
+            "fees": 0.0020645348234156237,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0009641580584903,
+            "purchasing_power_gain_on_contributions": 0.062445922794035935,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          }
+        ],
+        "market": [
+          {
+            "terminal_wealth": 1.056225245745143,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05626374600047157,
+            "fees": 0.0020572825282734165,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169037984597311,
+            "purchasing_power_gain_on_contributions": 0.03866781434484845,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0789420081317933,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.045544250660673136,
+            "fees": 0.0020800220301619553,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.025744024584996,
+            "purchasing_power_gain_on_contributions": 0.051862825687257086,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9944385950237232,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.049089528778580305,
+            "fees": 0.0019954340290527757,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0096210470525881,
+            "purchasing_power_gain_on_contributions": -0.01503777290814945,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0806779122317094,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05538107159205996,
+            "fees": 0.0020817596719036133,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0163756334074587,
+            "purchasing_power_gain_on_contributions": 0.06326625384423434,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9424108118203323,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.14125792659696645,
+            "fees": 0.0019433541659863187,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0312121146907125,
+            "purchasing_power_gain_on_contributions": -0.08611351787407395,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8250048142737537,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.21053852911537907,
+            "fees": 0.0018258306449186724,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0306326172853246,
+            "purchasing_power_gain_on_contributions": -0.19951610259841412,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9580451346171329,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.16685090521029255,
+            "fees": 0.001959004138755889,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0016772917643963,
+            "purchasing_power_gain_on_contributions": -0.04355909583455553,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0623422853035065,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07637031070900457,
+            "fees": 0.002063405690994501,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9999629390043396,
+            "purchasing_power_gain_on_contributions": 0.062381658225531655,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0733274973038813,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08256794027346825,
+            "fees": 0.0020744018992030844,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169779344130836,
+            "purchasing_power_gain_on_contributions": 0.05540883531884888,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.084210609785226,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.026151303598413556,
+            "fees": 0.002085295905690917,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0108436369419154,
+            "purchasing_power_gain_on_contributions": 0.07257994229974707,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9659195360971374,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07172870325990999,
+            "fees": 0.001966886422519657,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0087837461366267,
+            "purchasing_power_gain_on_contributions": -0.04249098005756713,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1164519651280338,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06260974915833128,
+            "fees": 0.0021175695346626966,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9966113148942944,
+            "purchasing_power_gain_on_contributions": 0.12024813329201489,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0998412448392352,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.020608977548511986,
+            "fees": 0.0021009421870262614,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0182105064124716,
+            "purchasing_power_gain_on_contributions": 0.08017078778177078,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0336994112092548,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0572495351819714,
+            "fees": 0.0020347341453546093,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0059007722551645,
+            "purchasing_power_gain_on_contributions": 0.027635567762581026,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0580075336312011,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08922067485540819,
+            "fees": 0.0020590666002314327,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0035839898145937,
+            "purchasing_power_gain_on_contributions": 0.05422918696287882,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.031062158481534,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.04064600390454698,
+            "fees": 0.0020320942527342683,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0009641580584903,
+            "purchasing_power_gain_on_contributions": 0.030069009145565317,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ],
+        "rf_proxy": [
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169037984597311,
+            "purchasing_power_gain_on_contributions": -0.016622809832488317,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.025744024584996,
+            "purchasing_power_gain_on_contributions": -0.025097903539249677,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0096210470525881,
+            "purchasing_power_gain_on_contributions": -0.009529364587510414,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0163756334074587,
+            "purchasing_power_gain_on_contributions": -0.016111792598331398,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0312121146907125,
+            "purchasing_power_gain_on_contributions": -0.030267404975235168,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.001040529475765,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0306326172853246,
+            "purchasing_power_gain_on_contributions": -0.02871254733573725,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0045401005273966,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0016772917643963,
+            "purchasing_power_gain_on_contributions": 0.0028580150379147184,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0086465658642363,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9999629390043396,
+            "purchasing_power_gain_on_contributions": 0.008683948695681565,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0105544179406738,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0169779344130836,
+            "purchasing_power_gain_on_contributions": -0.006316279100113342,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.010988971694678,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0108436369419154,
+            "purchasing_power_gain_on_contributions": 0.0001437757012572316,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.013286101390717,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0087837461366267,
+            "purchasing_power_gain_on_contributions": 0.0044631520594311525,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0133164962249057,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 0.9966113148942944,
+            "purchasing_power_gain_on_contributions": 0.016761982410748777,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0131037210425853,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0182105064124716,
+            "purchasing_power_gain_on_contributions": -0.005015451458932008,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0132861014920036,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0059007722551645,
+            "purchasing_power_gain_on_contributions": 0.007342005733111945,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0135495570941004,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0035839898145937,
+            "purchasing_power_gain_on_contributions": 0.00992997833828313,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0115451004521898,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 1.0
+            },
+            "inflation_preserving_terminal_wealth": 1.0009641580584903,
+            "purchasing_power_gain_on_contributions": 0.010570750519401928,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ]
+      }
+    },
+    "monthly_equal_contributions": {
+      "summary": {
+        "frozen_rule_BusEq": {
+          "rounds": 16,
+          "wins_vs_market": 9,
+          "wins_vs_rf": 10,
+          "purchasing_power_positive_rounds": 10,
+          "joint_wins": 8,
+          "mean_terminal_wealth": 1.0252752928734354,
+          "worst_unitized_drawdown": -0.25890939562234727
+        },
+        "frozen_learned": {
+          "rounds": 16,
+          "wins_vs_market": 3,
+          "wins_vs_rf": 9,
+          "purchasing_power_positive_rounds": 8,
+          "joint_wins": 1,
+          "mean_terminal_wealth": 0.9959508259927498,
+          "worst_unitized_drawdown": -0.18044502676883234
+        },
+        "equal_weight_industries": {
+          "rounds": 16,
+          "wins_vs_market": 8,
+          "wins_vs_rf": 10,
+          "purchasing_power_positive_rounds": 10,
+          "joint_wins": 3,
+          "mean_terminal_wealth": 1.0120810995938625,
+          "worst_unitized_drawdown": -0.18034565262190372
+        },
+        "constant_Money_hindsight_baseline": {
+          "rounds": 16,
+          "wins_vs_market": 8,
+          "wins_vs_rf": 10,
+          "purchasing_power_positive_rounds": 9,
+          "joint_wins": 4,
+          "mean_terminal_wealth": 1.0103688720499326,
+          "worst_unitized_drawdown": -0.17360377835489282
+        },
+        "market": {
+          "rounds": 16,
+          "wins_vs_market": 0,
+          "wins_vs_rf": 10,
+          "purchasing_power_positive_rounds": 10,
+          "joint_wins": 0,
+          "mean_terminal_wealth": 1.014223670480597,
+          "worst_unitized_drawdown": -0.21122420149868892
+        },
+        "rf_proxy": {
+          "rounds": 16,
+          "wins_vs_market": 6,
+          "wins_vs_rf": 0,
+          "purchasing_power_positive_rounds": 8,
+          "joint_wins": 0,
+          "mean_terminal_wealth": 1.0047582482632762,
+          "worst_unitized_drawdown": 0.0
+        }
+      },
+      "quarters": {
+        "frozen_rule_BusEq": [
+          {
+            "terminal_wealth": 1.0175332760179276,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10709135588349206,
+            "fees": 0.002018551827845774,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 0.3333333333333333,
+              "20210201": 0.3333333333333333,
+              "20210301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0121945013565736,
+            "purchasing_power_gain_on_contributions": 0.005274455308934112,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0819328779887176,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08303807956521148,
+            "fees": 0.0020830158938826004,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 0.3333333333333333,
+              "20210503": 0.3333333333333333,
+              "20210601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0174723132553063,
+            "purchasing_power_gain_on_contributions": 0.06335363025965379,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9779320895433009,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0689005513914811,
+            "fees": 0.0019789110005438448,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 0.3333333333333333,
+              "20210802": 0.3333333333333333,
+              "20210901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0057081703631257,
+            "purchasing_power_gain_on_contributions": -0.027618430115562975,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0525561130025782,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05726540594139906,
+            "fees": 0.002053609722725304,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 0.3333333333333333,
+              "20211101": 0.3333333333333333,
+              "20211201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0091497306083674,
+            "purchasing_power_gain_on_contributions": 0.04301282661795214,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9726512734551757,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.20650655552766473,
+            "fees": 0.00197362489835353,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 0.3333333333333333,
+              "20220201": 0.3333333333333333,
+              "20220301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0223902680893855,
+            "purchasing_power_gain_on_contributions": -0.04864971448443134,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.865703825222539,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.25890939562234727,
+            "fees": 0.001866570395618158,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 0.3333333333333333,
+              "20220502": 0.3333333333333333,
+              "20220601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0230932375877835,
+            "purchasing_power_gain_on_contributions": -0.1538368220831292,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8848552465384153,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.20972319205024714,
+            "fees": 0.0018857409875259416,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 0.3333333333333333,
+              "20220801": 0.3333333333333333,
+              "20220901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0018745664258575,
+            "purchasing_power_gain_on_contributions": -0.11680036983562059,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9674945127091367,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10717912512117922,
+            "fees": 0.001968462975684822,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 0.3333333333333333,
+              "20221101": 0.3333333333333333,
+              "20221201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9976052768356425,
+            "purchasing_power_gain_on_contributions": -0.03018304416153028,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.137489483785464,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0689652323698452,
+            "fees": 0.002138628111897362,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 0.3333333333333333,
+              "20230201": 0.3333333333333333,
+              "20230301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.009733328563844,
+            "purchasing_power_gain_on_contributions": 0.12652464923915052,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.1180937201855703,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.040748555432331024,
+            "fees": 0.002119212933118689,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 0.3333333333333333,
+              "20230501": 0.3333333333333333,
+              "20230601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.006609344078583,
+            "purchasing_power_gain_on_contributions": 0.11075237554946038,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9411045322865045,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08911558100718642,
+            "fees": 0.00194204657886537,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 0.3333333333333333,
+              "20230801": 0.3333333333333333,
+              "20230901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0060440057548625,
+            "purchasing_power_gain_on_contributions": -0.06454933690463383,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.120973297521971,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08117928789746198,
+            "fees": 0.0021220953929148864,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 0.3333333333333333,
+              "20231101": 0.3333333333333333,
+              "20231201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9975371787897236,
+            "purchasing_power_gain_on_contributions": 0.12374087037237858,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0749411231833375,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.03843485549366221,
+            "fees": 0.002076017140323662,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 0.3333333333333333,
+              "20240201": 0.3333333333333333,
+              "20240301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0124561763843591,
+            "purchasing_power_gain_on_contributions": 0.0617161989392192,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.115129635365113,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07769273372598373,
+            "fees": 0.0021162458812463594,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 0.3333333333333333,
+              "20240501": 0.3333333333333333,
+              "20240603": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0027459905115235,
+            "purchasing_power_gain_on_contributions": 0.11207588553533898,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0308260918026877,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.14341572219148657,
+            "fees": 0.0020318579497524396,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 0.3333333333333333,
+              "20240801": 0.3333333333333333,
+              "20240903": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.002535869817957,
+            "purchasing_power_gain_on_contributions": 0.028218663128599886,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0451875873665273,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.03781856000000006,
+            "fees": 0.0020462338211877148,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 0.3333333333333333,
+              "20241101": 0.3333333333333333,
+              "20241202": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0003774168043311,
+            "purchasing_power_gain_on_contributions": 0.04479326483132806,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          }
+        ],
+        "frozen_learned": [
+          {
+            "terminal_wealth": 1.0240834584454785,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10169355651026779,
+            "fees": 0.011722958507669263,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 0.3333333333333333,
+              "20210201": 0.3333333333333333,
+              "20210301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0121945013565736,
+            "purchasing_power_gain_on_contributions": 0.011745723843560762,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0252284019762579,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06327768245739607,
+            "fees": 0.008929071718027417,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 0.3333333333333333,
+              "20210503": 0.3333333333333333,
+              "20210601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0174723132553063,
+            "purchasing_power_gain_on_contributions": 0.007622899040993669,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0008060523610383,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0814235383818912,
+            "fees": 0.007643974782871989,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 0.3333333333333333,
+              "20210802": 0.3333333333333333,
+              "20210901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0057081703631257,
+            "purchasing_power_gain_on_contributions": -0.004874294697553627,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0306473899182576,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.11227284028799522,
+            "fees": 0.005470183007745733,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 0.3333333333333333,
+              "20211101": 0.3333333333333333,
+              "20211201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0091497306083674,
+            "purchasing_power_gain_on_contributions": 0.021302744932538697,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9724756724257966,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.18044502676883234,
+            "fees": 0.011752831085104014,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 0.3333333333333333,
+              "20220201": 0.3333333333333333,
+              "20220301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0223902680893855,
+            "purchasing_power_gain_on_contributions": -0.048821469864798184,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9134781097990967,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1551644961771148,
+            "fees": 0.009104670120050227,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 0.3333333333333333,
+              "20220502": 0.3333333333333333,
+              "20220601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0230932375877835,
+            "purchasing_power_gain_on_contributions": -0.10714089758537926,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9037045900711623,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.14406907269350155,
+            "fees": 0.011926555210380978,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 0.3333333333333333,
+              "20220801": 0.3333333333333333,
+              "20220901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0018745664258575,
+            "purchasing_power_gain_on_contributions": -0.09798629453676233,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.024549850269045,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06480950856502354,
+            "fees": 0.004683989132714124,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 0.3333333333333333,
+              "20221101": 0.3333333333333333,
+              "20221201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9976052768356425,
+            "purchasing_power_gain_on_contributions": 0.027009253117495025,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.972112115705269,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.11692196761358431,
+            "fees": 0.00983715437464217,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 0.3333333333333333,
+              "20230201": 0.3333333333333333,
+              "20230301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.009733328563844,
+            "purchasing_power_gain_on_contributions": -0.037258563022856794,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0193153691952275,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0662167383195913,
+            "fees": 0.016530042230109423,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 0.3333333333333333,
+              "20230501": 0.3333333333333333,
+              "20230601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.006609344078583,
+            "purchasing_power_gain_on_contributions": 0.012622598023143805,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9054713315180464,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.12801932867956434,
+            "fees": 0.006570446086392166,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 0.3333333333333333,
+              "20230801": 0.3333333333333333,
+              "20230901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0060440057548625,
+            "purchasing_power_gain_on_contributions": -0.09996846426350281,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1036673750681163,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05947418413323635,
+            "fees": 0.010958713928733946,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 0.3333333333333333,
+              "20231101": 0.3333333333333333,
+              "20231201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9975371787897236,
+            "purchasing_power_gain_on_contributions": 0.10639222129761294,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0387476755094183,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.051263006317630255,
+            "fees": 0.007783855322056039,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 0.3333333333333333,
+              "20240201": 0.3333333333333333,
+              "20240301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0124561763843591,
+            "purchasing_power_gain_on_contributions": 0.02596803667981984,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9944150814885425,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.048667465955488876,
+            "fees": 0.009447298080492307,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 0.3333333333333333,
+              "20240501": 0.3333333333333333,
+              "20240603": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0027459905115235,
+            "purchasing_power_gain_on_contributions": -0.008308095072742328,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0376652186254474,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.09775895774487187,
+            "fees": 0.010703353757696937,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 0.3333333333333333,
+              "20240801": 0.3333333333333333,
+              "20240903": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.002535869817957,
+            "purchasing_power_gain_on_contributions": 0.035040490684756564,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9688455235077962,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07832685764674852,
+            "fees": 0.00862550512779918,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 0.3333333333333333,
+              "20241101": 0.3333333333333333,
+              "20241202": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0003774168043311,
+            "purchasing_power_gain_on_contributions": -0.03151999711994935,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          }
+        ],
+        "equal_weight_industries": [
+          {
+            "terminal_wealth": 1.0682295542999685,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.04319754317101154,
+            "fees": 0.00240231804056509,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 0.3333333333333333,
+              "20210201": 0.3333333333333333,
+              "20210301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0121945013565736,
+            "purchasing_power_gain_on_contributions": 0.05535996576576441,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.030392769008914,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.038208598480493405,
+            "fees": 0.002262314993884619,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 0.3333333333333333,
+              "20210503": 0.3333333333333333,
+              "20210601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0174723132553063,
+            "purchasing_power_gain_on_contributions": 0.012698582148412463,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.981218588994083,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0394222443302803,
+            "fees": 0.002190124109400131,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 0.3333333333333333,
+              "20210802": 0.3333333333333333,
+              "20210901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0057081703631257,
+            "purchasing_power_gain_on_contributions": -0.024350584086634597,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0485442549375943,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06271696468448151,
+            "fees": 0.002336309261331615,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 0.3333333333333333,
+              "20211101": 0.3333333333333333,
+              "20211201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0091497306083674,
+            "purchasing_power_gain_on_contributions": 0.039037343155685855,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.018478803570634,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.10028490337252405,
+            "fees": 0.0023450342258037266,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 0.3333333333333333,
+              "20220201": 0.3333333333333333,
+              "20220301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0223902680893855,
+            "purchasing_power_gain_on_contributions": -0.003825803747194434,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8976859236255966,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.18034565262190372,
+            "fees": 0.002235745213476176,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 0.3333333333333333,
+              "20220502": 0.3333333333333333,
+              "20220601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0230932375877835,
+            "purchasing_power_gain_on_contributions": -0.12257662288714588,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9178745142746244,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1545470151024656,
+            "fees": 0.00219045363372972,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 0.3333333333333333,
+              "20220801": 0.3333333333333333,
+              "20220901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0018745664258575,
+            "purchasing_power_gain_on_contributions": -0.0838428830975313,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9876739043821929,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0803260055820858,
+            "fees": 0.0022678528058424534,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 0.3333333333333333,
+              "20221101": 0.3333333333333333,
+              "20221201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9976052768356425,
+            "purchasing_power_gain_on_contributions": -0.009955212431264848,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0186709295420298,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08164612535025528,
+            "fees": 0.0022881755260743715,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 0.3333333333333333,
+              "20230201": 0.3333333333333333,
+              "20230301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.009733328563844,
+            "purchasing_power_gain_on_contributions": 0.008851446936883667,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0591308463345352,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.03535223949597488,
+            "fees": 0.0023096187999091093,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 0.3333333333333333,
+              "20230501": 0.3333333333333333,
+              "20230601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.006609344078583,
+            "purchasing_power_gain_on_contributions": 0.05217664883096096,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9536433327798335,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06438510804533526,
+            "fees": 0.002166020187077544,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 0.3333333333333333,
+              "20230801": 0.3333333333333333,
+              "20230901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0060440057548625,
+            "purchasing_power_gain_on_contributions": -0.052085865702973244,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0848010559527774,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06045867296063612,
+            "fees": 0.0022945935034596743,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 0.3333333333333333,
+              "20231101": 0.3333333333333333,
+              "20231201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9975371787897236,
+            "purchasing_power_gain_on_contributions": 0.08747932309543383,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0594362075569717,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.025944828977744527,
+            "fees": 0.0022720435255527936,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 0.3333333333333333,
+              "20240201": 0.3333333333333333,
+              "20240301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0124561763843591,
+            "purchasing_power_gain_on_contributions": 0.046402039187894095,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0132254827424378,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05148819194251153,
+            "fees": 0.002220855471294726,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 0.3333333333333333,
+              "20240501": 0.3333333333333333,
+              "20240603": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0027459905115235,
+            "purchasing_power_gain_on_contributions": 0.010450794448520817,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0533211324326588,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06437488872445685,
+            "fees": 0.0023231455292844943,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 0.3333333333333333,
+              "20240801": 0.3333333333333333,
+              "20240903": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.002535869817957,
+            "purchasing_power_gain_on_contributions": 0.05065680355549129,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0009702930669475,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0472308960787704,
+            "fees": 0.0022920132349731203,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 0.3333333333333333,
+              "20241101": 0.3333333333333333,
+              "20241202": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0003774168043311,
+            "purchasing_power_gain_on_contributions": 0.000592652585571507,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ],
+        "constant_Money_hindsight_baseline": [
+          {
+            "terminal_wealth": 1.1216161407049918,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07881475508228242,
+            "fees": 0.0021227388795845765,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 0.3333333333333333,
+              "20210201": 0.3333333333333333,
+              "20210301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0121945013565736,
+            "purchasing_power_gain_on_contributions": 0.10810337262430103,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.017141703433174,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06579158161603083,
+            "fees": 0.002018159863296471,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 0.3333333333333333,
+              "20210503": 0.3333333333333333,
+              "20210601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0174723132553063,
+            "purchasing_power_gain_on_contributions": -0.0003249324997105507,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0019623479903608,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05330472922060081,
+            "fees": 0.0020029653133036645,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 0.3333333333333333,
+              "20210802": 0.3333333333333333,
+              "20210901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0057081703631257,
+            "purchasing_power_gain_on_contributions": -0.0037245619386908624,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0286399802405317,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08440790197719272,
+            "fees": 0.0020296696498904223,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 0.3333333333333333,
+              "20211101": 0.3333333333333333,
+              "20211201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0091497306083674,
+            "purchasing_power_gain_on_contributions": 0.01931353598084451,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9744340634569608,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.13893508622629513,
+            "fees": 0.001975409472929891,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 0.3333333333333333,
+              "20220201": 0.3333333333333333,
+              "20220301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0223902680893855,
+            "purchasing_power_gain_on_contributions": -0.046905967446309815,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9001542684548808,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.17360377835489282,
+            "fees": 0.00190105532377866,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 0.3333333333333333,
+              "20220502": 0.3333333333333333,
+              "20220601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0230932375877835,
+            "purchasing_power_gain_on_contributions": -0.12016399348192763,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9302069799220162,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.14738041897229126,
+            "fees": 0.0019311381180400567,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 0.3333333333333333,
+              "20220801": 0.3333333333333333,
+              "20220901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0018745664258575,
+            "purchasing_power_gain_on_contributions": -0.07153349222099947,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0148528435397421,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07502090942140138,
+            "fees": 0.0020158687122519944,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 0.3333333333333333,
+              "20221101": 0.3333333333333333,
+              "20221201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9976052768356425,
+            "purchasing_power_gain_on_contributions": 0.017288968998648624,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 0.9120848265677313,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.15027004162798152,
+            "fees": 0.0019129978243921238,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 0.3333333333333333,
+              "20230201": 0.3333333333333333,
+              "20230301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.009733328563844,
+            "purchasing_power_gain_on_contributions": -0.09670721886044831,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0366044063590665,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0648411691710461,
+            "fees": 0.002037642048407474,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 0.3333333333333333,
+              "20230501": 0.3333333333333333,
+              "20230601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.006609344078583,
+            "purchasing_power_gain_on_contributions": 0.029798116277114373,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9741288551004039,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.062142734088462825,
+            "fees": 0.0019751039590594635,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 0.3333333333333333,
+              "20230801": 0.3333333333333333,
+              "20230901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0060440057548625,
+            "purchasing_power_gain_on_contributions": -0.03172341415673141,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1317988971663926,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.066338598755454,
+            "fees": 0.002132931828995388,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 0.3333333333333333,
+              "20231101": 0.3333333333333333,
+              "20231201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9975371787897236,
+            "purchasing_power_gain_on_contributions": 0.1345931973578809,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0740327669376566,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.026034371515237353,
+            "fees": 0.0020751078748124695,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 0.3333333333333333,
+              "20240201": 0.3333333333333333,
+              "20240301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0124561763843591,
+            "purchasing_power_gain_on_contributions": 0.060819018135873426,
+            "beats_market": true,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": true
+          },
+          {
+            "terminal_wealth": 1.0042669458314746,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06303474607715487,
+            "fees": 0.0020052722180495244,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 0.3333333333333333,
+              "20240501": 0.3333333333333333,
+              "20240603": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0027459905115235,
+            "purchasing_power_gain_on_contributions": 0.0015167902283759194,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0358679184674888,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07600651069267983,
+            "fees": 0.0020369048232907797,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 0.3333333333333333,
+              "20240801": 0.3333333333333333,
+              "20240903": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.002535869817957,
+            "purchasing_power_gain_on_contributions": 0.03324773671747461,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0081090086260505,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08878469202852146,
+            "fees": 0.0020091181267528034,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 0.3333333333333333,
+              "20241101": 0.3333333333333333,
+              "20241202": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0003774168043311,
+            "purchasing_power_gain_on_contributions": 0.007728674889940557,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ],
+        "market": [
+          {
+            "terminal_wealth": 1.047175821931383,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.056565010393122894,
+            "fees": 0.0020482240459773603,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 0.3333333333333333,
+              "20210201": 0.3333333333333333,
+              "20210301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0121945013565736,
+            "purchasing_power_gain_on_contributions": 0.03455988007040767,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0442958952013097,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.04600948756412848,
+            "fees": 0.0020453412364377474,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 0.3333333333333333,
+              "20210503": 0.3333333333333333,
+              "20210601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0174723132553063,
+            "purchasing_power_gain_on_contributions": 0.02636296004967842,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.977046573675885,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.049089528778580194,
+            "fees": 0.001978024598274159,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 0.3333333333333333,
+              "20210802": 0.3333333333333333,
+              "20210901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0057081703631257,
+            "purchasing_power_gain_on_contributions": -0.028498919996734262,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0408295093820956,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05569761794006456,
+            "fees": 0.0020418713807628585,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 0.3333333333333333,
+              "20211101": 0.3333333333333333,
+              "20211201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0091497306083674,
+            "purchasing_power_gain_on_contributions": 0.03139254543984271,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9920676971939213,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.1419990660292042,
+            "fees": 0.001993060757951873,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 0.3333333333333333,
+              "20220201": 0.3333333333333333,
+              "20220301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0223902680893855,
+            "purchasing_power_gain_on_contributions": -0.02965850892940347,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.8835781634148142,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.21122420149868892,
+            "fees": 0.001884462626040855,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 0.3333333333333333,
+              "20220502": 0.3333333333333333,
+              "20220601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0230932375877835,
+            "purchasing_power_gain_on_contributions": -0.13636594305120564,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9127634484060687,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.16712688572714385,
+            "fees": 0.0019136771255316002,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 0.3333333333333333,
+              "20220801": 0.3333333333333333,
+              "20220901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0018745664258575,
+            "purchasing_power_gain_on_contributions": -0.08894438586028652,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.994287132791343,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07666076650055142,
+            "fees": 0.00199528241520655,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 0.3333333333333333,
+              "20221101": 0.3333333333333333,
+              "20221201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9976052768356425,
+            "purchasing_power_gain_on_contributions": -0.003326109154940027,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0341877397267205,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08287280751766013,
+            "fees": 0.0020352229626894097,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 0.3333333333333333,
+              "20230201": 0.3333333333333333,
+              "20230301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.009733328563844,
+            "purchasing_power_gain_on_contributions": 0.024218682766130373,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0748996838459755,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.02617661236278923,
+            "fees": 0.0020759756595054813,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 0.3333333333333333,
+              "20230501": 0.3333333333333333,
+              "20230601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.006609344078583,
+            "purchasing_power_gain_on_contributions": 0.06784194898359819,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 0.9492002908470613,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.07249507467375549,
+            "fees": 0.0019501504412883495,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 0.3333333333333333,
+              "20230801": 0.3333333333333333,
+              "20230901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0060440057548625,
+            "purchasing_power_gain_on_contributions": -0.05650221519400622,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.1052000987089003,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.06260974915833128,
+            "fees": 0.0021063064051140144,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 0.3333333333333333,
+              "20231101": 0.3333333333333333,
+              "20231201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9975371787897236,
+            "purchasing_power_gain_on_contributions": 0.10792872908235895,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0723986928314417,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.020608977548511986,
+            "fees": 0.002073472164996438,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 0.3333333333333333,
+              "20240201": 0.3333333333333333,
+              "20240301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0124561763843591,
+            "purchasing_power_gain_on_contributions": 0.05920504792725634,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0476930109753098,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.05724953518197129,
+            "fees": 0.0020487417527280376,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 0.3333333333333333,
+              "20240501": 0.3333333333333333,
+              "20240603": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0027459905115235,
+            "purchasing_power_gain_on_contributions": 0.044823934365330054,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.039335158605852,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.08967981892494836,
+            "fees": 0.002040375534139992,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 0.3333333333333333,
+              "20240801": 0.3333333333333333,
+              "20240903": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.002535869817957,
+            "purchasing_power_gain_on_contributions": 0.03670620662637947,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0126198101514707,
+            "contributions": 1.0,
+            "unitized_max_drawdown": -0.0406460039045472,
+            "fees": 0.002013633443595066,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 0.3333333333333333,
+              "20241101": 0.3333333333333333,
+              "20241202": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0003774168043311,
+            "purchasing_power_gain_on_contributions": 0.012237774605355911,
+            "beats_market": false,
+            "beats_rf": true,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ],
+        "rf_proxy": [
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q1",
+            "start": "20210104",
+            "end": "20210331",
+            "deposit_dates": {
+              "20210104": 0.3333333333333333,
+              "20210201": 0.3333333333333333,
+              "20210301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0121945013565736,
+            "purchasing_power_gain_on_contributions": -0.012047587040070029,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q2",
+            "start": "20210401",
+            "end": "20210630",
+            "deposit_dates": {
+              "20210401": 0.3333333333333333,
+              "20210503": 0.3333333333333333,
+              "20210601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0174723132553063,
+            "purchasing_power_gain_on_contributions": -0.017172273906309377,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q3",
+            "start": "20210701",
+            "end": "20210930",
+            "deposit_dates": {
+              "20210701": 0.3333333333333333,
+              "20210802": 0.3333333333333333,
+              "20210901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0057081703631257,
+            "purchasing_power_gain_on_contributions": -0.005675772089098752,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2021Q4",
+            "start": "20211001",
+            "end": "20211231",
+            "deposit_dates": {
+              "20211001": 0.3333333333333333,
+              "20211101": 0.3333333333333333,
+              "20211201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0091497306083674,
+            "purchasing_power_gain_on_contributions": -0.009066772086290364,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q1",
+            "start": "20220103",
+            "end": "20220331",
+            "deposit_dates": {
+              "20220103": 0.3333333333333333,
+              "20220201": 0.3333333333333333,
+              "20220301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0223902680893855,
+            "purchasing_power_gain_on_contributions": -0.021899922943542705,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0008370203006192,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q2",
+            "start": "20220401",
+            "end": "20220630",
+            "deposit_dates": {
+              "20220401": 0.3333333333333333,
+              "20220502": 0.3333333333333333,
+              "20220601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0230932375877835,
+            "purchasing_power_gain_on_contributions": -0.02175385045026723,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0033895361236058,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q3",
+            "start": "20220701",
+            "end": "20220930",
+            "deposit_dates": {
+              "20220701": 0.3333333333333333,
+              "20220801": 0.3333333333333333,
+              "20220901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0018745664258575,
+            "purchasing_power_gain_on_contributions": 0.0015121351000584315,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0061104521683106,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2022Q4",
+            "start": "20221003",
+            "end": "20221230",
+            "deposit_dates": {
+              "20221003": 0.3333333333333333,
+              "20221101": 0.3333333333333333,
+              "20221201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9976052768356425,
+            "purchasing_power_gain_on_contributions": 0.00852559176475709,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0071218534455084,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q1",
+            "start": "20230103",
+            "end": "20230331",
+            "deposit_dates": {
+              "20230103": 0.3333333333333333,
+              "20230201": 0.3333333333333333,
+              "20230301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.009733328563844,
+            "purchasing_power_gain_on_contributions": -0.0025863017932168386,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.007508055683501,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q2",
+            "start": "20230403",
+            "end": "20230630",
+            "deposit_dates": {
+              "20230403": 0.3333333333333333,
+              "20230501": 0.3333333333333333,
+              "20230601": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.006609344078583,
+            "purchasing_power_gain_on_contributions": 0.0008928107117271988,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0087774719824765,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q3",
+            "start": "20230703",
+            "end": "20230929",
+            "deposit_dates": {
+              "20230703": 0.3333333333333333,
+              "20230801": 0.3333333333333333,
+              "20230901": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0060440057548625,
+            "purchasing_power_gain_on_contributions": 0.0027170443956503476,
+            "beats_market": true,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.008723715570465,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2023Q4",
+            "start": "20231002",
+            "end": "20231229",
+            "deposit_dates": {
+              "20231002": 0.3333333333333333,
+              "20231101": 0.3333333333333333,
+              "20231201": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 0.9975371787897236,
+            "purchasing_power_gain_on_contributions": 0.011214155240121926,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.008582200095414,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q1",
+            "start": "20240102",
+            "end": "20240328",
+            "deposit_dates": {
+              "20240102": 0.3333333333333333,
+              "20240201": 0.3333333333333333,
+              "20240301": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0124561763843591,
+            "purchasing_power_gain_on_contributions": -0.003826315033979677,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": false,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0086967981635773,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q2",
+            "start": "20240401",
+            "end": "20240628",
+            "deposit_dates": {
+              "20240401": 0.3333333333333333,
+              "20240501": 0.3333333333333333,
+              "20240603": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0027459905115235,
+            "purchasing_power_gain_on_contributions": 0.005934511539675391,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0088118046217742,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q3",
+            "start": "20240701",
+            "end": "20240930",
+            "deposit_dates": {
+              "20240701": 0.3333333333333333,
+              "20240801": 0.3333333333333333,
+              "20240903": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.002535869817957,
+            "purchasing_power_gain_on_contributions": 0.006260060106334953,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          },
+          {
+            "terminal_wealth": 1.0075730640571678,
+            "contributions": 1.0,
+            "unitized_max_drawdown": 0.0,
+            "fees": 0.0,
+            "quarter": "2024Q4",
+            "start": "20241001",
+            "end": "20241231",
+            "deposit_dates": {
+              "20241001": 0.3333333333333333,
+              "20241101": 0.3333333333333333,
+              "20241202": 0.3333333333333333
+            },
+            "inflation_preserving_terminal_wealth": 1.0003774168043311,
+            "purchasing_power_gain_on_contributions": 0.007192932519231476,
+            "beats_market": false,
+            "beats_rf": false,
+            "preserves_purchasing_power": true,
+            "beats_all_three": false
+          }
+        ]
+      }
+    }
+  },
+  "checks": {
+    "old_lump_sum_outcomes_reproduced": true,
+    "all_flows_matched": true,
+    "passive_wealth_independently_checked": true,
+    "cpi_months_complete": true,
+    "no_model_refit": true
+  }
+}

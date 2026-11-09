@@ -1,0 +1,14 @@
+{
+  "development": {
+    "days": 2014,
+    "sha256": "17b9c60b33ad06dcf9442af9bd402be8e05f3c276baf33fc8a6ff25493225382",
+    "first": "20090102",
+    "last": "20161230"
+  },
+  "validation": {
+    "days": 1007,
+    "sha256": "492b25b71fb23ccc6be45764ffa15fdd38313195da3bc0c0844ccbdddd807956",
+    "first": "20170103",
+    "last": "20201231"
+  }
+}
