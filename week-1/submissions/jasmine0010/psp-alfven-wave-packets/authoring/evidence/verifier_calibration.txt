@@ -1,0 +1,26 @@
+# Verifier calibration: every detector scored on the hidden records with tests/answer_key.json scoring
+# (output of authoring/provenance/make_key.py, 2026-11-09). Columns: injected packets found, of those with period within
+# 25 s and right sigma_c sign, decoys reported, clear non-waves reported, reports on the scrambled record (rec5), and
+# unsupported reports per record (rec1-rec5). Limits = worst good detector plus a margin; the shipped key raises
+# decoys_max from 0 to 1. 'numpy reference' is solution/detect.py. 'WRONG' rows are solution/detect.py with one
+# deliberate scientific error; no_compressibility_test passing is a known gap.
+
+detector                     packets  period sign  decoys  nonwave  null  unsupported/rec      verdict
+author reference             16/16   16    16    0/16    0/14    1   [0, 0, 0, 0, 0]  PASS
+author k3.5                  16/16   16    16    0/16    0/14    2   [0, 0, 0, 0, 0]  PASS
+author k4.5                  16/16   16    16    0/16    0/14    0   [0, 0, 0, 0, 0]  PASS
+author window6h              16/16   16    16    0/16    0/14    0   [0, 0, 0, 0, 0]  PASS
+author window12h             16/16   16    16    0/16    0/14    2   [0, 0, 0, 0, 0]  PASS
+numpy reference              16/16   16    16    0/16    0/14    1   [2, 3, 3, 2, 1]  PASS
+numpy k=5                    16/16   16    16    0/16    0/14    0   [0, 0, 0, 0, 0]  PASS
+band-excess 20 min           16/16   16    16    0/16    0/14    0   [0, 0, 1, 2, 0]  PASS
+band-excess 30 min           16/16   16    16    0/16    0/14    1   [0, 0, 1, 0, 1]  PASS
+band-excess 60 min           16/16   16    16    0/16    0/14    0   [0, 0, 0, 0, 0]  PASS
+agent detector (adapted)     16/16   16    16    0/16    0/14    0   [0, 0, 0, 0, 0]  PASS
+WRONG loudest_reference      16/16   16    16    0/16    0/14    9   [2, 0, 1, 1, 7]  FAIL: null, unsupported
+WRONG magnetic_only          16/16   16    16   16/16   12/14    3   [0, 0, 1, 0, 2]  FAIL: decoys, non-waves
+WRONG no_compressibility_test 16/16   16    16    0/16    0/14    1   [0, 0, 0, 0, 0]  PASS
+WRONG no_direction_test      16/16   16    16    7/16    4/14    1   [0, 0, 0, 0, 0]  FAIL: decoys, non-waves
+WRONG positive_sigma_c       11/16   11    11    1/16    0/14    0   [0, 0, 0, 0, 0]  FAIL: packets, decoys
+WRONG sign_reversed           0/16    0     0    7/16    4/14    0   [0, 0, 0, 0, 0]  FAIL: packets, signs, decoys, non-waves
+limits: {'packets_min': 14, 'period_rate_min': 0.8, 'sign_rate_min': 0.95, 'decoys_max': 0, 'nonwave_max': 1, 'null_max': 3, 'unsupported_max': 5}
