@@ -1,0 +1,6 @@
+# Local computer time. Missed runs are skipped.
+
+[[job]]
+name = "morning-papers"
+cron = "0 8 * * 1-5"
+task = "Find up to three recent papers on Mars seismology or InSight magnetometer calibration using the literature tools. Verify citation metadata and DOI links. Distinguish directly supported findings from unavailable evidence; do not infer findings from shared editorial abstracts. Send a brief digest here on Telegram; no email."

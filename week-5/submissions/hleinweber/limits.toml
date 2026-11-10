@@ -1,0 +1,6 @@
+# Reloaded before every model call. Tokens include input + output for main and workers.
+turns_per_wake = 20
+minutes_per_wake = 10
+tokens_per_day = 250000
+replies_per_sender = 3
+max_output_tokens = 2048
