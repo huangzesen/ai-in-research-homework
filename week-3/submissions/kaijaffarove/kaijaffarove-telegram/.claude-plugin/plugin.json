@@ -1,0 +1,8 @@
+{
+  "name": "kaijaffarove-telegram",
+  "version": "0.1.0",
+  "description": "Telegram MCP server: send messages to, and wait for messages from, one Telegram chat (yours). Messages from any other chat are dropped.",
+  "author": { "name": "Kai Jaffarove" },
+  "repository": "https://github.com/kaijaffarove/kai-agent",
+  "license": "MIT"
+}

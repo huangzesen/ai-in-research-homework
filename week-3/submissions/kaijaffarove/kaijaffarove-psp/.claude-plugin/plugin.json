@@ -1,0 +1,8 @@
+{
+  "name": "kaijaffarove-psp",
+  "version": "0.1.0",
+  "description": "Parker Solar Probe data from NASA CDAWeb (read-only): solar wind summaries from SWEAP/SPAN-i and FIELDS, any CDAWeb dataset by ID, saved as CSV.",
+  "author": { "name": "Kai Jaffarove" },
+  "repository": "https://github.com/kaijaffarove/kai-agent",
+  "license": "MIT"
+}
