@@ -1,0 +1,6 @@
+{
+  "name": "hleinweber-email",
+  "version": "0.1.0",
+  "description": "Read and send email from the agent's dedicated Gmail account.",
+  "author": {"name": "hleinweber"}
+}
