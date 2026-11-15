@@ -1,0 +1,8 @@
+{
+  "name": "hleinweber-insight-literature",
+  "version": "0.1.0",
+  "description": "Find and verify InSight literature on Mars seismology, interior structure, magnetic fields and calibration.",
+  "author": {
+    "name": "hleinweber"
+  }
+}

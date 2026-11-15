@@ -1,0 +1,8 @@
+{
+  "name": "hleinweber-telegram",
+  "version": "0.1.0",
+  "description": "Send and receive messages in your own Telegram chat.",
+  "author": {
+    "name": "hleinweber"
+  }
+}
