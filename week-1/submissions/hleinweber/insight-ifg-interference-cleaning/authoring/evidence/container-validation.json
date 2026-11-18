@@ -1,0 +1,43 @@
+{
+  "reviewed_utc": "2026-11-17T00:43:45.021161+00:00",
+  "mode": "direct Docker; not Harbor",
+  "docker_server_version": "29.9.3",
+  "verifier_network": "none",
+  "cpus": 1,
+  "memory_mb": 2048,
+  "cases": {
+    "oracle": {
+      "reward": 1.0,
+      "expected_reward": 1,
+      "container_exit_code": 0,
+      "expectation_met": true,
+      "ctrf_summary": {
+        "tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794876248.4608083,
+        "stop": 1794876249.4581025
+      }
+    },
+    "nop": {
+      "reward": 0.0,
+      "expected_reward": 0,
+      "container_exit_code": 0,
+      "expectation_met": true,
+      "ctrf_summary": {
+        "tests": 4,
+        "passed": 0,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794876250.2234824,
+        "stop": 1794876251.1231823
+      }
+    }
+  },
+  "all_expectations_met": true
+}

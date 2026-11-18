@@ -1,0 +1,83 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.18, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+tests/test_outputs.py EEEEEE                                             [100%]
+
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_output_shape ______________________
+
+    @pytest.fixture(scope='module')
+    def candidate():
+>       assert CANDIDATE_PATH.is_file(), 'Required output /root/results/cleaned.asc is missing.'
+E       AssertionError: Required output /root/results/cleaned.asc is missing.
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/cleaned.asc').is_file
+
+tests/test_outputs.py:102: AssertionError
+_____________________ ERROR at setup of test_output_finite _____________________
+
+    @pytest.fixture(scope='module')
+    def candidate():
+>       assert CANDIDATE_PATH.is_file(), 'Required output /root/results/cleaned.asc is missing.'
+E       AssertionError: Required output /root/results/cleaned.asc is missing.
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/cleaned.asc').is_file
+
+tests/test_outputs.py:102: AssertionError
+__________________ ERROR at setup of test_original_timestamps __________________
+
+    @pytest.fixture(scope='module')
+    def candidate():
+>       assert CANDIDATE_PATH.is_file(), 'Required output /root/results/cleaned.asc is missing.'
+E       AssertionError: Required output /root/results/cleaned.asc is missing.
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/cleaned.asc').is_file
+
+tests/test_outputs.py:102: AssertionError
+_______________ ERROR at setup of test_event_window_accuracy[0] ________________
+
+    @pytest.fixture(scope='module')
+    def candidate():
+>       assert CANDIDATE_PATH.is_file(), 'Required output /root/results/cleaned.asc is missing.'
+E       AssertionError: Required output /root/results/cleaned.asc is missing.
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/cleaned.asc').is_file
+
+tests/test_outputs.py:102: AssertionError
+_______________ ERROR at setup of test_event_window_accuracy[1] ________________
+
+    @pytest.fixture(scope='module')
+    def candidate():
+>       assert CANDIDATE_PATH.is_file(), 'Required output /root/results/cleaned.asc is missing.'
+E       AssertionError: Required output /root/results/cleaned.asc is missing.
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/cleaned.asc').is_file
+
+tests/test_outputs.py:102: AssertionError
+_______________ ERROR at setup of test_event_window_accuracy[2] ________________
+
+    @pytest.fixture(scope='module')
+    def candidate():
+>       assert CANDIDATE_PATH.is_file(), 'Required output /root/results/cleaned.asc is missing.'
+E       AssertionError: Required output /root/results/cleaned.asc is missing.
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/cleaned.asc').is_file
+
+tests/test_outputs.py:102: AssertionError
+=========================== short test summary info ============================
+ERROR tests/test_outputs.py::test_output_shape - AssertionError: Required out...
+ERROR tests/test_outputs.py::test_output_finite - AssertionError: Required ou...
+ERROR tests/test_outputs.py::test_original_timestamps - AssertionError: Requi...
+ERROR tests/test_outputs.py::test_event_window_accuracy[0] - AssertionError: ...
+ERROR tests/test_outputs.py::test_event_window_accuracy[1] - AssertionError: ...
+ERROR tests/test_outputs.py::test_event_window_accuracy[2] - AssertionError: ...
+============================== 6 errors in 0.90s ===============================

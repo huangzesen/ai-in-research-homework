@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 
 out = Path(__file__).resolve().parent
 root = out.parent.parent
-raw = np.loadtxt(root / 'environment/data/input.asc')
-ref = np.loadtxt(root / 'solution/data/solution.asc')
+raw = np.loadtxt(root / 'environment/data/input.asc.gz')
+ref = np.loadtxt(root / 'solution/data/solution.asc.gz')
 assert raw.shape == ref.shape and np.array_equal(raw[:, 0], ref[:, 0])
 t = raw[:, 0]; cadence = float(np.median(np.diff(t)))
 starts = np.r_[0, np.flatnonzero(np.diff(t) > 1.5 * cadence) + 1]

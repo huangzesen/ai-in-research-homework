@@ -8,7 +8,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 out=Path(__file__).resolve().parent; root=out.parent.parent
-x=np.loadtxt(root/'environment/data/input.asc'); y=np.loadtxt(root/'solution/data/solution.asc')
+x=np.loadtxt(root/'environment/data/input.asc.gz'); y=np.loadtxt(root/'solution/data/solution.asc.gz')
 t=x[:,0]; dt=float(np.median(np.diff(t))); correction=x[:,1:]-y[:,1:]
 starts=np.r_[0,np.flatnonzero(np.diff(t)>1.5*dt)+1]; ends=np.r_[starts[1:],len(t)]
 sos=butter(4,1/3600,btype='highpass',fs=1/dt,output='sos')

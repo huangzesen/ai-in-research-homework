@@ -1,5 +1,5 @@
 {
-  "window_count": 647,
+  "window_count": 2340,
   "excluded_gap_edge_candidates": 64,
   "selected_candidate_ids": [
     2,
@@ -671,40 +671,40 @@
     "uncleaned": {
       "passes": false,
       "failing_windows_per_component": [
-        100,
-        106,
-        175
+        134,
+        98,
+        243
       ],
       "max_window_rms_nT": [
-        4.490259476661652,
-        6.275305814823991,
-        7.53281159292787
+        4.867212872772428,
+        9.463230113068306,
+        4.547351937617298
       ]
     },
     "constant_field": {
       "passes": false,
       "failing_windows_per_component": [
-        47,
-        39,
-        19
+        270,
+        172,
+        74
       ],
       "max_window_rms_nT": [
-        3.0009081684823213,
-        2.898310246597142,
-        2.1494751161100476
+        3.6794245577845586,
+        5.495797638333243,
+        3.029348438133886
       ]
     },
     "blanket_one_hour_lowpass": {
       "passes": false,
       "failing_windows_per_component": [
-        39,
-        37,
-        14
+        223,
+        162,
+        55
       ],
       "max_window_rms_nT": [
-        2.813955675960124,
-        2.5587553164629946,
-        2.197062429502281
+        3.48615321105213,
+        5.043088491106759,
+        2.7268270741266143
       ]
     }
   },
@@ -712,5 +712,7 @@
     "missing_row": "rejected",
     "changed_timestamp": "rejected",
     "nonfinite": "rejected"
-  }
+  },
+  "original_event_window_count": 647,
+  "all_nonexcluded_data_scored": true
 }

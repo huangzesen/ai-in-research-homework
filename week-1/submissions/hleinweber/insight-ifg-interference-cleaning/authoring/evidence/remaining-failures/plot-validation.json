@@ -1,0 +1,9 @@
+{
+  "failed_windows": 40,
+  "failed_component_checks": 51,
+  "original_report_scores_reproduced": true,
+  "filtered_fields_match_residual": true,
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "matplotlib": "3.9.2"
+}

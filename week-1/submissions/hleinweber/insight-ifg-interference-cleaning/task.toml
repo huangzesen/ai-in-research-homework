@@ -24,7 +24,7 @@ subfield = "planetary-magnetism"      # e.g. space-plasma-physics, seismology
 tags = ["space-physics", "magnetometry", "signal-processing", "data-cleaning"]
 expert_time_estimate_hours = 160.0   # hours a focused top expert needs (must be > 0)
 relevant_experience = "Produced the expert-cleaned InSight IFG reference using manually tuned Python code."           # one sentence on your background for this task
-class_level = 1                    # 1 valid, 2 honest, 3 hard, 4 benchmark-ready
+class_level = 2                    # 1 valid, 2 honest, 3 hard, 4 benchmark-ready
 
 [verifier]
 timeout_sec = 120.0
@@ -42,7 +42,7 @@ cpus = 1
 memory_mb = 2048
 storage_mb = 4096
 gpus = 0
-network_mode = "public"            # the agent may use the internet
+network_mode = "public"            # allow access to published research
 
 
 

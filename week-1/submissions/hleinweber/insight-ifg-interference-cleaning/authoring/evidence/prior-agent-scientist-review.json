@@ -1,0 +1,10 @@
+{
+  "confirmation": "Ok the remaining failures are confirmed failures",
+  "source": "Explicit user/scientist confirmation after failure plots were supplied in this session",
+  "failed_windows_confirmed": 40,
+  "failed_component_window_checks": 51,
+  "candidate": "Reconstructed prior-agent output; original score counts reproduced, byte identity unverified",
+  "per_window_cause_classification": "Not provided",
+  "grading_changed": false,
+  "fresh_agent_run": false
+}

@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.18, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+tests/test_outputs.py ......                                             [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::test_output_shape
+PASSED tests/test_outputs.py::test_output_finite
+PASSED tests/test_outputs.py::test_original_timestamps
+PASSED tests/test_outputs.py::test_event_window_accuracy[0]
+PASSED tests/test_outputs.py::test_event_window_accuracy[1]
+PASSED tests/test_outputs.py::test_event_window_accuracy[2]
+============================== 6 passed in 1.00s ===============================

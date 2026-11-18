@@ -1,0 +1,46 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 356B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535
+#4 resolve docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 62B done
+#5 DONE 0.0s
+
+#6 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [3/6] RUN pip install --no-cache-dir numpy==2.1.3 scipy==1.14.1
+#7 CACHED
+
+#8 [4/6] COPY data /root/data
+#8 CACHED
+
+#9 [5/6] RUN mkdir -p /root/results
+#9 CACHED
+
+#10 [6/6] WORKDIR /root
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:8027689fcb9fb278d2d876803eb80a74f858f436005eb0636f2182524d59b593 done
+#11 exporting config sha256:09191a923b67d8943537a65dd3e075a828c568f62682ba79b62ab5dbf66a9dc4 done
+#11 exporting attestation manifest sha256:2f7b6368b74cc42380937b6f6dc435c1b84db09a2c743e52113c243eaadf9931
+#11 exporting attestation manifest sha256:2f7b6368b74cc42380937b6f6dc435c1b84db09a2c743e52113c243eaadf9931 0.0s done
+#11 exporting manifest list sha256:b36911f062d963dc76b7ae4efcc42373f05eb7ad7688c6a6e44176f1ce0769c0 0.0s done
+#11 naming to docker.io/library/ifg-validation-agent:local done
+#11 unpacking to docker.io/library/ifg-validation-agent:local done
+#11 DONE 0.1s

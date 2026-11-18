@@ -1,0 +1,76 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 272B done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535
+#4 resolve docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535 0.0s done
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 2.58MB 0.1s done
+#5 DONE 0.2s
+
+#6 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5 numpy==2.1.3 scipy==1.14.1
+#6 1.127 Collecting pytest==8.4.1
+#6 1.179   Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
+#6 1.199 Collecting pytest-json-ctrf==0.3.5
+#6 1.208   Downloading pytest_json_ctrf-0.3.5-py3-none-any.whl.metadata (3.3 kB)
+#6 1.392 Collecting numpy==2.1.3
+#6 1.405   Downloading numpy-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+#6 1.413      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 8.0 MB/s eta 0:00:00
+#6 1.541 Collecting scipy==1.14.1
+#6 1.558   Downloading scipy-1.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+#6 1.560      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 43.4 MB/s eta 0:00:00
+#6 1.584 Collecting iniconfig>=1 (from pytest==8.4.1)
+#6 1.597   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+#6 1.599 Requirement already satisfied: packaging>=20 in /usr/local/lib/python3.11/site-packages (from pytest==8.4.1) (26.3)
+#6 1.615 Collecting pluggy<2,>=1.5 (from pytest==8.4.1)
+#6 1.630   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+#6 1.653 Collecting pygments>=2.7.2 (from pytest==8.4.1)
+#6 1.663   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+#6 1.740 Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
+#6 1.769    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.5/365.5 kB 13.4 MB/s eta 0:00:00
+#6 1.779 Downloading pytest_json_ctrf-0.3.5-py3-none-any.whl (6.8 kB)
+#6 1.792 Downloading numpy-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.3 MB)
+#6 2.711    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.3/16.3 MB 18.6 MB/s eta 0:00:00
+#6 2.733 Downloading scipy-1.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (41.2 MB)
+#6 4.937    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 MB 19.4 MB/s eta 0:00:00
+#6 4.951 Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+#6 4.962 Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+#6 4.975 Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+#6 5.046    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 18.8 MB/s eta 0:00:00
+#6 5.140 Installing collected packages: pygments, pluggy, numpy, iniconfig, scipy, pytest, pytest-json-ctrf
+#6 8.878 Successfully installed iniconfig-2.3.1 numpy-2.1.3 pluggy-1.7.0 pygments-2.21.0 pytest-8.4.1 pytest-json-ctrf-0.3.5 scipy-1.14.1
+#6 8.878 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#6 8.989 
+#6 8.989 [notice] A new release of pip is available: 24.0 -> 26.3
+#6 8.989 [notice] To update, run: pip install --upgrade pip
+#6 DONE 9.3s
+
+#7 [3/4] RUN mkdir -p /root/results /logs/verifier
+#7 DONE 0.3s
+
+#8 [4/4] COPY . /tests/
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 6.0s done
+#9 exporting manifest sha256:a518a6ad325f2008abc94dece0033f6b38e30aee08cc71c2041561830213d9c4 0.0s done
+#9 exporting config sha256:58f33a8f3d5ddc689cae65a35c4d2533b30f263c36a3d94175edf89b435b3d95 0.0s done
+#9 exporting attestation manifest sha256:f3e79ee783e50ce1c9d892de232b3852042f415c97669667e00d78af650a50b2 0.0s done
+#9 exporting manifest list sha256:ca2c2c0ff6855cd5717b789dfea1a1d22baafaa28a0b4a8720a480e680b93965
+#9 exporting manifest list sha256:ca2c2c0ff6855cd5717b789dfea1a1d22baafaa28a0b4a8720a480e680b93965 0.0s done
+#9 naming to docker.io/library/ifg-validation-verifier:local done
+#9 unpacking to docker.io/library/ifg-validation-verifier:local
+#9 unpacking to docker.io/library/ifg-validation-verifier:local 1.3s done
+#9 DONE 7.4s

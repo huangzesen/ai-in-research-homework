@@ -1,0 +1,101 @@
+{
+  "python": "3.11.17 (main, Oct  3 2026, 01:03:09) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.1.3",
+  "scipy": "1.14.1",
+  "pytest": "8.4.1",
+  "mode": "local actual pytest suite; artifact path redirected",
+  "docker_harbor_run": false,
+  "cases": {
+    "reference": {
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "summary": {
+        "tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794875127.6354795,
+        "stop": 1794875131.8545413
+      },
+      "expectation_met": true
+    },
+    "missing_output": {
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "summary": {
+        "tests": 4,
+        "passed": 0,
+        "failed": 4,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794875132.2666957,
+        "stop": 1794875133.5602849
+      },
+      "expectation_met": true
+    },
+    "uncleaned": {
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "summary": {
+        "tests": 4,
+        "passed": 3,
+        "failed": 1,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794875134.450635,
+        "stop": 1794875139.0473258
+      },
+      "expectation_met": true
+    },
+    "curved_excluded_interiors": {
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "summary": {
+        "tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794875139.9504285,
+        "stop": 1794875144.4042153
+      },
+      "expectation_met": true
+    },
+    "constant_offsets": {
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "summary": {
+        "tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794875145.3227632,
+        "stop": 1794875150.014679
+      },
+      "expectation_met": true
+    },
+    "nonfinite_excluded_interior": {
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "summary": {
+        "tests": 4,
+        "passed": 2,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1794875150.9686625,
+        "stop": 1794875152.7636855
+      },
+      "expectation_met": true
+    }
+  },
+  "all_expectations_met": true
+}
